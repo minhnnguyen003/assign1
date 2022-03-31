@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quizz</title>
+  <script src="https://kit.fontawesome.com/37641fc831.js" crossorigin="anonymous"></script>
+</head>
+<body id="quizz-body">
+  <nav class="navbar">
+    <div class="brand-title">Question About</div>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic.html">Topic</a></li>
+        <li><a href="quizz.html">Quizz</a></li>
+        <li><a href="enhancement.html">Enhancement</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="heading">
+    <h1 id="head"> Quizz time!</h1>
+    <h2 id="subheading"><i>Thank you for taking the time to fill the form</i></h2>
+  </div>
+  <form>
+    <div id="content1">
+      <fieldset class="fieldset">
+
+        <legend class="legend">Personal details</legend>
+        <label>First name</label><br><br>
+        <input type="text" name="fname" placeholder="Enter your name" class="box" required pattern="^[a-zA-Z -]+$" maxlength="30" title="Only contains characters and the number of characters must be under 30!" autofocus><br><br>
+        <label>Last name</label><br><br>
+        <input type="text" name="lname" placeholder="Enter your name" class="box" required pattern="^[a-zA-Z -]+$" title="Only contains characters and the number of characters must be under 30!" autofocus><br><br>
+        <label>Age</label><br><br>
+        <input type="text" name="age" placeholder="Enter your name" class="box" required><br><br>
+        <label>Student ID</label><br><br>
+        <input type="text" name="id" placeholder="Enter your name" class="box" required pattern="(\d{7}|\d{10})$"  title="The length of your ID must be 7 or 10!"><br><br>
+      </fieldset>
+      <fieldset class="fieldset">
+      <legend class="legend">Questions</legend>
+      <br>
+      <label>Which is the main technology of <span class="streaming-media">streaming media</span>?</label><br><br>
+      <div id="option1">
+        <select>
+          <option id="default-val1" class="answer">Select your answer</option>
+          <option value="Protocol" class="ans-opt">Protocol</option>
+          <option value="Bandwidth" class="ans-opt">Bandwidth</option>
+          <option value="Pandas" class="ans-opt">Pandas</option>
+          <option value="Blockchain" class="ans-opt" >Blockchain</option>
+        </select>
+      </div><br>
+      <label id="head1">Which is the correct definition of <span class="streaming-media">streaming media</span>?</label><br><br>
+      <input type="radio" name="radio" class="answer" id="def-ans1" required >
+      <label for="def-ans1">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
+      <input type="radio" name="radio" class="answer" id="def-ans2">
+      <label for="def-ans2">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
+      <input type="radio" name="radio" class="answer" id="def-ans3">
+      <label for="def-ans3">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
+      <label id="head2">How many <span class="streaming-media">streaming media</span> platforms are there is those picture below</label>
+      <div id="logo">
+          <img src="image/twitch.jpeg" width="150" height="150" alt="Twitch" >
+          <img src="image/facebook.png" width="150" height="150" alt="Facebook" >
+          <img src="image/leetcode.jpeg" width="150" height="150" alt="LeetCode" >
+          <br>
+          <img src="image/netflix.png" width="150" height="150" alt="Netflix">
+          <img src="image/google.jpeg" width="150" height="150" alt="Google">
+          <img src="image/instagram.jpeg" width="150" height="150" alt="Instagram">
+      </div>
+        <input type="radio" name="number_of_media" class="answer" id="ques2-ans1" required>
+        <label for ="ques2-ans1">2</label><br><br>
+        <input type="radio" name="number_of_media" class="answer" id="ques2-ans2">
+        <label for ="ques2-ans2">3</label><br><br>
+        <input type="radio" name="number_of_media" class="answer" id="ques2-ans3">
+        <label for ="ques2-ans3">4</label><br><br>
+        <input type="radio" name="number_of_media" class="answer" id="ques2-ans4">
+        <label for ="ques2-ans4">5</label><br><br>
+        <label>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</label><br><br>
+        <div id="option2">
+          <select>
+            <option id="default-val2" class="ans-opt">Select your answer</option>
+            <option value = "Netflix" class="ans-opt">Netflix</option>
+            <option value = "HBO GO" class="ans-opt">HBO GO</option>
+            <option value = "Disney +" class="ans-opt">Disney +</option>
+            <option value="Tencent Video" class="ans-opt">Tencent Video</option>
+          </select>
+        </div>
+        <br>
+        <label for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span class="note">(Each points should be seperated by ",")</span></label><br><br>
+        <input type="text" name="advantages" id="advantages" class="box" placeholder="Your answer will be here..." required>
+        <br><br>
+        <label id="head3">Which of these are the main troubles of <span class="streaming-media">streaming media</span> at the momment? <span class="note">(You can choose more than one answer)</span></label><br>
+        <div id="content3">
+          <input type="checkbox" name="checkbox" class="answer"><label>Coppyright issues</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Marketing issues</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Greenhouse emission</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Cloud architecture</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Humanity</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Video quality</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Browser does not support</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Corrupted connection</label><br><br>
+        </div>
+        <div id="content4">
+          <label id="head4">What are some negative impacts of <span class="streaming-media">streaming media</span> on human's lives?</label><br><br>
+          <textarea placeholder="Enter your answer here..." required></textarea>
+        </div>
+        </fieldset>
+        <div class="button">
+          <input type="reset" name="reset" value="RESET" id="reset-button" class="btn">
+          <input type="submit" name="submit" value="SUBMIT" id="submit-button" class="btn">
+        </div>    
+    </div>
+  </form>
+  <footer class="footer">
+    <div class="row">
+      <div class="col">
+        <a href="https://www.swinburne.edu.au/" target="_blank"><img src="image/swinburnelogo.png" width="200" height="100" class="swinburne-logo"></a>
+        <div class="uni-contact">
+          <h4 id="swinburne">Connect with Swinburne</h4>
+            <a href="https://www.facebook.com/swinburneuniversityoftechnology" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/swinburne" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/swinburne-university-of-technology/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/swinburne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="col">
+        <h3>Members</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
+          <li class="footer-list-item">Md Arefin Newaz Sojol</li>
+          <li class="footer-list-item">Ahmed Fuzail Mohamed Imran</li>
+          <li class="footer-list-item">Viet Dung Tran</li>
+          <li class="footer-list-item">Minh Nhat Nguyen</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Contact details</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor">101224555@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au" class="footer-list-anchor">103535741@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au" class="footer-list-anchor">103831821@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au" class="footer-list-anchor">103486496@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor">103534696@student.swin.edu.au</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Address</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">John Street</li>
+          <li class="footer-list-item">Hawthorn VIC 3122</li>
+          <li class="footer-list-item">Melbourne, Australia</li>
+        </ul>
+      </div>
+
+
+      <hr id="copyright-line">
+    <div class="footer-bottom">
+      <p class ="copyright">All Right reserved by &copy;Swinburne University</p>
+      <p class="copyright">Mark up by Viet Dung Tran</p>
+    </div>
+  </footer>
+</body>
+</html>

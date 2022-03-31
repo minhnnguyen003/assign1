@@ -1,0 +1,59 @@
+/*
+filename: enhancement.css
+author: Minh Nhat Nguyen
+created: 22/03/2022
+last modified: 27/03/2022
+description: CSS for enhancement.html, inside assignment Part 1 COS10026
+*/
+
+
+
+.nav-links li a:hover {
+    transition: all .5s ease 0s;
+    color: #a09c9c;
+}
+
+main {
+    width: 70%;
+    min-height: 400px;
+    min-height: 500px;
+    float: left;
+    padding: 50px 0 0 30px;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    min-height: 500px;
+    padding: 50px 0 0 20px;
+}
+
+footer {
+    margin: 0 auto;
+    font-style: italic;
+    text-align: center;
+}
+
+
+@media screen and (maximum) {
+    
+}
+
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+}
+
+/* details {
+    background-color: white;
+} */
+
+details ol {
+    margin: 0 0 0 20px;
+}
+
+.no-list-icon {
+    list-style-type: none;
+}
