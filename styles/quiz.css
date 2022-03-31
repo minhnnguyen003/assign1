@@ -225,9 +225,6 @@
     margin: 20px auto;
   }
   
-  
-  
-  
   input[type ="radio"]:checked + label, input[type="checkbox"]:checked + label{
       animation-name: highlight-ans;
       animation-duration: 4s;
