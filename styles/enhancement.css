@@ -13,7 +13,7 @@ html {
 main {
     width: 70%;
     min-height: 400px;
-    min-height: 500px;
+    min-height: 700px;
     float: left;
     padding: 50px 0 0 30px;
 }
@@ -21,14 +21,21 @@ main {
 aside {
     width: 30%;
     float: right;
-    min-height: 500px;
+    min-height: 700px;
     padding: 50px 0 0 20px;
 }
 
+.code-link {
+    text-decoration: none;
+}
 
+.hidden-bubble {
+    display: none;
+}
 
-@media screen and (maximum) {
-    
+.code-link:hover + .hidden-bubble{
+    display: block;
+    color: #61c121;
 }
 
 code {
