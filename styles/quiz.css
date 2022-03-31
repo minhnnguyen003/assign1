@@ -1,0 +1,262 @@
+.quizz-body{
+    background: url("./image/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    background-color: rgba(115, 115, 115, 0.8);
+    background-blend-mode: multiply;
+    font-size: 1.2em;
+    font-family: poppins,sans-serif;
+  }
+  fieldset{
+    border: none;
+  }
+  legend{
+    text-align: center;
+    font-family: poppins,sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin: auto;
+  }
+  .heading{
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+  }
+  #head{
+    font-size: 2em;
+  }
+  #subheading{
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  #content1{
+    width: 90%;
+    margin: auto;
+  }
+  form{
+    background-color: rgba(0, 0, 0,0.7);
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 60px ;
+  }
+  form .box{
+    width: 100%;
+    height: 2.8em;
+    position: relative;
+    bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+  }
+  #option1 select{
+    width: 100%;
+    height: 2.7em;
+    position: relative;
+    bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+  }
+  #option2 select{
+    width: 100%;
+    height: 2.7em;
+    position: relative;
+    bottom: 10px;
+    border-radius: 5px;
+    border: 0;
+  }
+  #content3{
+    margin-top: 10px;
+  
+  }
+  #content4 textarea{
+    width: 100%;
+    height:  125px;
+    position: relative;
+    bottom: 17px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  textarea::placeholder{
+    font-size: 1.4em;
+    position: relative;
+    top: 8px;
+    left: 5px;
+    width: 70%;
+  }
+  input::placeholder{
+    font-size: 1.1em;
+    position: relative;
+    left: 5px;
+    width: 50%;
+    font-weight: 500;
+  }
+  
+  div[class="button"]{
+      display: flex;
+      justify-content: center;
+  }
+  .button{
+      margin: 5px auto;
+  }
+   .button > input{
+      font-weight: 800;
+      background-color: rgb(189, 189, 189);
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all 0.3s;
+      margin: 5px;
+      color: black;
+      width: 40%;
+      cursor: pointer;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  
+  }
+  #submit-button:hover{
+      transform: translateY(-3px);
+      box-shadow: 15px 15px 25px rgba(36, 160, 255, 0.3);
+      background-color: rgb(125, 228, 255) ;
+      border-color: rgb(67, 210, 247)
+  }
+  #submit-button:active {
+      transform: translateY(-5px);
+      box-shadow: 10px 5px 10px rgba(36, 160, 255, 0.3);
+      border-color: rgb(67, 210, 247);
+      color: rgb(67, 210, 247);
+  }
+  #reset-button:hover{
+      transform: translateY(-3px);
+      box-shadow: 15px 15px 25px rgba(255, 64, 64, 0.3);
+      background-color: rgb(245, 118, 118) ;
+      border-color: rgb(255, 89, 89)
+  }
+  #reset-button:active {
+      transform: translateY(-5px);
+      box-shadow: 10px 5px 10px rgba(255, 64, 64, 0.3);
+      border-color: rgb(255, 89, 89);
+      color: rgb(255, 89, 89);
+  }
+  .answer{
+    width: 15px;
+    height: 15px;
+  }
+  .streaming-media, .note{
+    font-style: italic;
+  }
+  
+  
+  .row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .col{
+    padding: 10px;
+  }
+  .swinburne-logo{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    font-family: poppins,sans-serif;
+    font-size: 15px;
+  }
+  
+  }
+  .uni-contact .fa-brands{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-top: 10px;
+  }
+  .uni-contact .fa-twitter:hover{
+    cursor: pointer;
+    color: rgb(82, 220, 255);
+    transform: translateY(-3px);
+    box-shadow:rgba(82, 220, 255, 0.6) ;
+  }
+  .uni-contact .fa-linkedin:hover{
+    cursor: pointer;
+    color: rgb(40,103,178);
+    transform: translateY(-3px);
+    box-shadow: rgba(40,103,178,0.6) ;
+  }
+  .uni-contact .fa-instagram:hover{
+    cursor: pointer;
+    color: rgb(225,48,108);
+    transform: translateY(-3px);
+    box-shadow: rgba(225,48,108, 0.6);
+  }
+  .uni-contact .fa-facebook-f:hover{
+    cursor: pointer;
+    color: rgb(66, 103, 178);
+    transform: translateY(-3px);
+    box-shadow: rgba(66, 103, 178, 0.6);
+  }
+  .uni-contact .fa-youtube:hover{
+    cursor: pointer;
+    color: rgb(255, 0 ,0);
+    transform: translateY(-3px);
+    box-shadow: rgba(255, 0, 0, 0.6);
+  }
+  #copyright-line{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+  
+  
+  
+  
+  input[type ="radio"]:checked + label, input[type="checkbox"]:checked + label{
+      animation-name: highlight-ans;
+      animation-duration: 4s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+  }
+  @keyframes highlight-ans{
+      0%
+      {
+          color: rgb(128, 204, 255);
+      }
+      25%
+      {
+          color: rgb(128, 204, 255);
+      }
+      50%
+      {
+          color: rgb(36, 167, 255);
+      }
+      75%
+      {
+          color: rgb(0, 153, 255);
+  
+      }
+      100%
+      {
+          color: rgb(0, 136, 227);
+  
+      }
+  }
+  

@@ -19,5 +19,14 @@
 .nav-links li
 {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px;
+}
+
+.nav-links li a:hover {
+    transition: all .5s ease 0s;
+    color: #a09c9c;
+}
+
+.nav-bar .nav-links .icon {
+    padding-right: 5px;
 }

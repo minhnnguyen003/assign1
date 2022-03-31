@@ -1,6 +1,9 @@
 @import url(./enhancement.css);
 @import url(./navbar.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url(./quiz.css);
+@import url(./footer.css);
 
 * {
     padding: 0;
@@ -9,10 +12,5 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #cdcdcd;
-}
 
-.nav-bar .nav-links .icon {
-    padding-right: 5px;
-}
+

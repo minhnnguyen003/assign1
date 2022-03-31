@@ -6,11 +6,8 @@ last modified: 27/03/2022
 description: CSS for enhancement.html, inside assignment Part 1 COS10026
 */
 
-
-
-.nav-links li a:hover {
-    transition: all .5s ease 0s;
-    color: #a09c9c;
+html {
+    background-color: #cdcdcd;
 }
 
 main {
@@ -28,11 +25,6 @@ aside {
     padding: 50px 0 0 20px;
 }
 
-footer {
-    margin: 0 auto;
-    font-style: italic;
-    text-align: center;
-}
 
 
 @media screen and (maximum) {
