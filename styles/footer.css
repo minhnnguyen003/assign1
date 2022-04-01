@@ -4,7 +4,7 @@ footer {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px 0px 20px;
+    padding: 25px 0px 25px;
     margin-top: 100px;
     font-style: italic;
     align-items: center;
@@ -25,13 +25,13 @@ footer {
 }
 
 .footer-bottom {
+    width: 2000px;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    align-items: center;
-
 }
 
 div[class="footer-bottom"] p {
     font-size: 12px;
-    margin-left: 10px;
+
 }

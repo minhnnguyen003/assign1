@@ -22,7 +22,7 @@
     <h2 id="subheading"><i>Thank you for taking the time to fill the form</i></h2>
   </div>
   <form>
-    <div id="content1">
+    <div id="question-part">
       <fieldset class="fieldset">
 
         <legend class="legend">Personal details</legend>
@@ -39,7 +39,7 @@
       <legend class="legend">Questions</legend>
       <br>
       <label>Which is the main technology of <span class="streaming-media">streaming media</span>?</label><br><br>
-      <div id="option1">
+      <div class="ques-option">
         <select>
           <option id="default-val1" class="answer">Select your answer</option>
           <option value="Protocol" class="ans-opt">Protocol</option>
@@ -48,14 +48,14 @@
           <option value="Blockchain" class="ans-opt" >Blockchain</option>
         </select>
       </div><br>
-      <label id="head1">Which is the correct definition of <span class="streaming-media">streaming media</span>?</label><br><br>
+      <label >Which is the correct definition of <span class="streaming-media">streaming media</span>?</label><br><br>
       <input type="radio" name="radio" class="answer" id="def-ans1" required >
       <label for="def-ans1">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
       <input type="radio" name="radio" class="answer" id="def-ans2">
       <label for="def-ans2">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
       <input type="radio" name="radio" class="answer" id="def-ans3">
       <label for="def-ans3">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
-      <label id="head2">How many <span class="streaming-media">streaming media</span> platforms are there is those picture below</label>
+      <label >How many <span class="streaming-media">streaming media</span> platforms are there is those picture below</label>
       <div id="logo">
           <img src="images/twitch.jpeg" width="150" height="150" alt="Twitch" >
           <img src="images/facebook.png" width="150" height="150" alt="Facebook" >
@@ -74,7 +74,7 @@
         <input type="radio" name="number_of_media" class="answer" id="ques2-ans4">
         <label for ="ques2-ans4">5</label><br><br>
         <label>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</label><br><br>
-        <div id="option2">
+        <div class ="ques-option">
           <select>
             <option id="default-val2" class="ans-opt">Select your answer</option>
             <option value = "Netflix" class="ans-opt">Netflix</option>
@@ -87,8 +87,8 @@
         <label for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span class="note">(Each points should be seperated by ",")</span></label><br><br>
         <input type="text" name="advantages" id="advantages" class="box" placeholder="Your answer will be here..." required>
         <br><br>
-        <label id="head3">Which of these are the main troubles of <span class="streaming-media">streaming media</span> at the momment? <span class="note">(You can choose more than one answer)</span></label><br>
-        <div id="content3">
+        <label class ="ques-checkbox">Which of these are the main troubles of <span class="streaming-media">streaming media</span> at the momment? <span class="note">(You can choose more than one answer)</span></label><br>
+        <div class ="ques-checkbox-ans">
           <input type="checkbox" name="checkbox" class="answer"><label>Coppyright issues</label><br><br>
           <input type="checkbox" name="checkbox" class="answer"><label>Marketing issues</label><br><br>
           <input type="checkbox" name="checkbox" class="answer"><label>Greenhouse emission</label><br><br>
@@ -98,8 +98,8 @@
           <input type="checkbox" name="checkbox" class="answer"><label>Browser does not support</label><br><br>
           <input type="checkbox" name="checkbox" class="answer"><label>Corrupted connection</label><br><br>
         </div>
-        <div id="content4">
-          <label id="head4">What are some negative impacts of <span class="streaming-media">streaming media</span> on human's lives?</label><br><br>
+        <div class="ques-textarea" >
+          <label >What are some negative impacts of <span class="streaming-media">streaming media</span> on human's lives?</label><br><br>
           <textarea placeholder="Enter your answer here..." required></textarea>
         </div>
         </fieldset>
@@ -110,7 +110,7 @@
     </div>
   </form>
   <footer class="footer">
-    <div class="row">
+    <div class="footer-row">
       <div class="col">
         <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200" height="100" class="swinburne-logo"></a>
         <div class="uni-contact">
@@ -122,7 +122,7 @@
             <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
-      <div class="col">
+      <div class="footer-col">
         <h3>Members</h3>
         <ul class="footer-list">
           <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
@@ -132,7 +132,7 @@
           <li class="footer-list-item">Minh Nhat Nguyen</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="footer-col">
         <h3>Contact details</h3>
         <ul class="footer-list">
           <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor">101224555@student.swin.edu.au</a></li>
@@ -142,7 +142,7 @@
           <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor">103534696@student.swin.edu.au</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="footer-col">
         <h3>Address</h3>
         <ul class="footer-list">
           <li class="footer-list-item">John Street</li>
@@ -155,7 +155,7 @@
       <hr id="copyright-line">
     <div class="footer-bottom">
       <p class ="copyright">All Right reserved by &copy;Swinburne University</p>
-      <p class="copyright">Mark up by Viet Dung Tran</p>
+      <p class="copyright">Mark up by: Viet Dung Tran</p>
     </div>
   </footer>
 </body>
