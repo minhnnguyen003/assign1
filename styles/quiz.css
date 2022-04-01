@@ -1,5 +1,5 @@
-.quizz-body{
-    background: url("./image/background.jpg");
+#quizz-body{
+    background: url("../images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
