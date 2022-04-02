@@ -30,6 +30,12 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
 }
+#copyright-line{
+    margin-left: 0;
+    border-top: 2px solid white;
+    width: 20000px;
+
+}
 
 div[class="footer-bottom"] p {
     font-size: 12px;
