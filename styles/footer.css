@@ -4,7 +4,7 @@ footer {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 20px 0px 20px;
+    padding: 25px 0px 25px;
     margin-top: 100px;
     font-style: italic;
     align-items: center;
@@ -26,12 +26,18 @@ footer {
 
 .footer-bottom {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#copyright-line{
+    margin-left: 0;
+    border-top: 2px solid white;
+    width: 100%;
 
 }
 
 div[class="footer-bottom"] p {
     font-size: 12px;
-    margin-left: 10px;
+
 }

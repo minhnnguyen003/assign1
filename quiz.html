@@ -15,31 +15,30 @@
         <li><a href="./quiz.html">Quiz</a></li>
         <li><a href="./enhancement.html" class="active">Enhancement</a></li>
     </ul>
-    </div>
 </nav>
   <div class="heading">
     <h1 id="head"> Quizz time!</h1>
     <h2 id="subheading"><i>Thank you for taking the time to fill the form</i></h2>
   </div>
   <form>
-    <div id="content1">
+    <div id="question-part">
       <fieldset class="fieldset">
 
         <legend class="legend">Personal details</legend>
-        <label>First name</label><br><br>
+        <p>First name</p><br>
         <input type="text" name="fname" placeholder="Enter your name" class="box" required pattern="^[a-zA-Z -]+$" maxlength="30" title="Only contains characters and the number of characters must be under 30!" autofocus><br><br>
-        <label>Last name</label><br><br>
-        <input type="text" name="lname" placeholder="Enter your name" class="box" required pattern="^[a-zA-Z -]+$" title="Only contains characters and the number of characters must be under 30!" autofocus><br><br>
-        <label>Age</label><br><br>
+        <p>Last name</p><br>
+        <input type="text" name="lname" placeholder="Enter your name" class="box" required pattern="^[a-zA-Z -]+$" title="Only contains characters and the number of characters must be under 30!"><br><br>
+        <p>Age</p><br>
         <input type="text" name="age" placeholder="Enter your name" class="box" required><br><br>
-        <label>Student ID</label><br><br>
+        <p>Student ID</p><br>
         <input type="text" name="id" placeholder="Enter your name" class="box" required pattern="(\d{7}|\d{10})$"  title="The length of your ID must be 7 or 10!"><br><br>
       </fieldset>
       <fieldset class="fieldset">
       <legend class="legend">Questions</legend>
       <br>
-      <label>Which is the main technology of <span class="streaming-media">streaming media</span>?</label><br><br>
-      <div id="option1">
+      <p>Which is the main technology of <span class="streaming-media">streaming media</span>?</p><br>
+      <div class="ques-option">
         <select>
           <option id="default-val1" class="answer">Select your answer</option>
           <option value="Protocol" class="ans-opt">Protocol</option>
@@ -47,34 +46,54 @@
           <option value="Pandas" class="ans-opt">Pandas</option>
           <option value="Blockchain" class="ans-opt" >Blockchain</option>
         </select>
-      </div><br>
-      <label id="head1">Which is the correct definition of <span class="streaming-media">streaming media</span>?</label><br><br>
+      </div><br><br>
+      <p >Which is the correct definition of <span class="streaming-media">streaming media</span>?</p><br>
+      <div class="radio-ans">
       <input type="radio" name="radio" class="answer" id="def-ans1" required >
       <label for="def-ans1">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
       <input type="radio" name="radio" class="answer" id="def-ans2">
-      <label for="def-ans2">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
+      <label for="def-ans2">Multimedia that is an application where people can see printed books online.</label><br><br>
       <input type="radio" name="radio" class="answer" id="def-ans3">
-      <label for="def-ans3">Multimedia that is delivered and consumed content in a continuous manner from a source.</label><br><br>
-      <label id="head2">How many <span class="streaming-media">streaming media</span> platforms are there is those picture below</label>
+      <label for="def-ans3">Multimedia that is an applications that does not require internet to deliver and consume.</label><br><br>
+      <input type="radio" name="radio" class="answer" id="def-ans4">
+      <label for="def-ans4">Multimedia supplies you a platform where you can share study materials.</label></div><br><br>
+
+
+
+
+      <p >How many <span class="streaming-media">streaming media</span> platforms are there is those picture below</p>
       <div id="logo">
-          <img src="images/twitch.jpeg" width="150" height="150" alt="Twitch" >
-          <img src="images/facebook.png" width="150" height="150" alt="Facebook" >
-          <img src="images/leetcode.jpeg" width="150" height="150" alt="LeetCode" >
+          <img src="images/twitch.jpeg" width="150" height="150" alt="Twitch"  >
+          <img src="images/facebook.png" width="150" height="150" alt="Facebook"  >
+          <img src="images/leetcode.jpeg" width="150" height="150" alt="LeetCode"  >
           <br>
-          <img src="images/netflix.png" width="150" height="150" alt="Netflix">
-          <img src="images/google.jpeg" width="150" height="150" alt="Google">
-          <img src="images/instagram.jpeg" width="150" height="150" alt="Instagram">
+          <img src="images/netflix.png" width="150" height="150" alt="Netflix" >
+          <img src="images/google.jpeg" width="150" height="150" alt="Google" >
+          <img src="images/instagram.jpeg" width="150" height="150" alt="Instagram" >
       </div>
-        <input type="radio" name="number_of_media" class="answer" id="ques2-ans1" required>
-        <label for ="ques2-ans1">2</label><br><br>
-        <input type="radio" name="number_of_media" class="answer" id="ques2-ans2">
-        <label for ="ques2-ans2">3</label><br><br>
-        <input type="radio" name="number_of_media" class="answer" id="ques2-ans3">
-        <label for ="ques2-ans3">4</label><br><br>
-        <input type="radio" name="number_of_media" class="answer" id="ques2-ans4">
-        <label for ="ques2-ans4">5</label><br><br>
-        <label>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</label><br><br>
-        <div id="option2">
+      <div class="radio-ans">
+          <input type="radio" name="number_of_media" class="answer" id="ques2-ans1" required>
+          <label for ="ques2-ans1">2</label><br><br>
+          <input type="radio" name="number_of_media" class="answer" id="ques2-ans2">
+          <label for ="ques2-ans2">3</label><br><br>
+          <input type="radio" name="number_of_media" class="answer" id="ques2-ans3">
+          <label for ="ques2-ans3">4</label><br><br>
+          <input type="radio" name="number_of_media" class="answer" id="ques2-ans4">
+          <label for ="ques2-ans4">5</label>
+        </div><br><br>
+
+          <p >What does Bus Bandwidth technology refer to?</p><br>
+          <div class="radio-ans">
+            <input type="radio" name="radio" class="answer" id="banwidth-ans1" required>
+            <label for="banwidth-ans1">It refers to unsupervised classification in machine learning.</label><br><br>
+            <input type="radio" name="radio" class="answer" id="bandwidth-ans2">
+            <label for="bandwidth-ans2">It refers to the number of bits that can be sent to the CPU simultaneously.</label><br><br>
+            <input type="radio" name="radio" class="answer" id="bandwidth-ans3">
+            <label for="bandwidth-ans3">It refers to Internet protocol.</label><br><br>
+            <input type="radio" name="radio" class="answer" id="bandwidth-ans4">
+            <label for="bandwidth-ans4">None of them gives the correct answer.</label></div><br><br>
+          <p>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</p><br>
+        <div class ="ques-option">
           <select>
             <option id="default-val2" class="ans-opt">Select your answer</option>
             <option value = "Netflix" class="ans-opt">Netflix</option>
@@ -84,24 +103,34 @@
           </select>
         </div>
         <br>
-        <label for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span class="note">(Each points should be seperated by ",")</span></label><br><br>
+        <lp for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span class="note">(Each points should be seperated by ",")</span></lp><br><br>
         <input type="text" name="advantages" id="advantages" class="box" placeholder="Your answer will be here..." required>
         <br><br>
-        <label id="head3">Which of these are the main troubles of <span class="streaming-media">streaming media</span> at the momment? <span class="note">(You can choose more than one answer)</span></label><br>
-        <div id="content3">
-          <input type="checkbox" name="checkbox" class="answer"><label>Coppyright issues</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Marketing issues</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Greenhouse emission</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Cloud architecture</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Humanity</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Video quality</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Browser does not support</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Corrupted connection</label><br><br>
-        </div>
-        <div id="content4">
-          <label id="head4">What are some negative impacts of <span class="streaming-media">streaming media</span> on human's lives?</label><br><br>
+        <p class ="ques-checkbox">Which of these are the main advantages of <span class="streaming-media">streaming media</span> at the momment? <span class="note">(You can choose more than one answer)</span></p>
+        <div class ="ques-checkbox-ans">
+          <input type="checkbox" name="checkbox" class="answer"><label>You can always see latest movies and series.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Watching contents without downloading.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Increasing the obesity rate in children.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>Prevent kids from following inappropriate contents.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>It can leads to social isolation.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>You can watch it wherever you want.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>The privacy could be decrease because online content is made available.</label><br><br>
+          <input type="checkbox" name="checkbox" class="answer"><label>The quality might be affected bycorrupted connection.</label><br><br>
+        </div><br>
+        <div class="ques-textarea" >
+          <p >Write a short paragraph about how <span class="streaming-media">streaming media</span> might grow in the future?</p><br>
           <textarea placeholder="Enter your answer here..." required></textarea>
-        </div>
+        </div><br>
+      <p>What is the key role that make <span class="streaming-media">streaming media</span> company become success in the competition?</p><br>
+      <div class="ques-option">
+        <select>
+          <option id="default-val2" class="answer">Select your answer</option>
+          <option value="Protocol" class="ans-opt">They applied modern technology</option>
+          <option value="Bandwidth" class="ans-opt">They offer exclusive content, self-produced and created specifically for the market</option>
+          <option value="Pandas" class="ans-opt">They try to make popular content that matched the global demands</option>
+          <option value="Blockchain" class="ans-opt" >They reduce the time spending on advertisements</option>
+        </select>
+      </div><br>
         </fieldset>
         <div class="button">
           <input type="reset" name="reset" value="RESET" id="reset-button" class="btn">
@@ -110,9 +139,9 @@
     </div>
   </form>
   <footer class="footer">
-    <div class="row">
-      <div class="col">
-        <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200" height="100" class="swinburne-logo"></a>
+    <div class="footer-row">
+      <div class="footer-col">
+        <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200" height="100" class="swinburne-logo" alt="Swinburne University"></a>
         <div class="uni-contact">
           <h4 id="swinburne">Connect with Swinburne</h4>
             <a href="https://www.facebook.com/swinburneuniversityoftechnology" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -121,8 +150,9 @@
             <a href="https://www.instagram.com/swinburne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
+
       </div>
-      <div class="col">
+      <div class="footer-col">
         <h3>Members</h3>
         <ul class="footer-list">
           <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
@@ -132,17 +162,17 @@
           <li class="footer-list-item">Minh Nhat Nguyen</li>
         </ul>
       </div>
-      <div class="col">
+      <div class="footer-col">
         <h3>Contact details</h3>
         <ul class="footer-list">
-          <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor">101224555@student.swin.edu.au</a></li>
-          <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au" class="footer-list-anchor">103535741@student.swin.edu.au</a></li>
-          <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au" class="footer-list-anchor">103831821@student.swin.edu.au</a></li>
-          <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au" class="footer-list-anchor">103486496@student.swin.edu.au</a></li>
-          <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor">103534696@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor" target="_blank">101224555@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au" class="footer-list-anchor" target="_blank">103535741@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au" class="footer-list-anchor" target="_blank">103831821@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au" class="footer-list-anchor" target="_blank">103486496@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor" target="_blank">103534696@student.swin.edu.au</a></li>
         </ul>
       </div>
-      <div class="col">
+      <div class="footer-col">
         <h3>Address</h3>
         <ul class="footer-list">
           <li class="footer-list-item">John Street</li>
@@ -150,12 +180,13 @@
           <li class="footer-list-item">Melbourne, Australia</li>
         </ul>
       </div>
+    </div>
 
 
       <hr id="copyright-line">
     <div class="footer-bottom">
       <p class ="copyright">All Right reserved by &copy;Swinburne University</p>
-      <p class="copyright">Mark up by Viet Dung Tran</p>
+      <p class="copyright">Mark up by: Viet Dung Tran</p>
     </div>
   </footer>
 </body>
