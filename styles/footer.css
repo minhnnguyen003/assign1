@@ -25,15 +25,15 @@ footer {
 }
 
 .footer-bottom {
-    width: 2000px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 #copyright-line{
     margin-left: 0;
     border-top: 2px solid white;
-    width: 20000px;
+    width: 100%;
 
 }
 
