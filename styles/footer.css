@@ -43,6 +43,75 @@ footer {
     width: 100%;
 
 }
+  .footer-row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer-col{
+    padding: 10px;
+  }
+  .swinburne-logo{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    font-family: poppins,sans-serif;
+    font-size: 15px;
+  }
+  
+  .uni-contact .fa-brands{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-top: 10px;
+  }
+  .uni-contact .fa-twitter:hover{
+    cursor: pointer;
+    color: rgb(82, 220, 255);
+    transform: translateY(-3px);
+    box-shadow:rgba(82, 220, 255, 0.6) ;
+  }
+  .uni-contact .fa-linkedin:hover{
+    cursor: pointer;
+    color: rgb(40,103,178);
+    transform: translateY(-3px);
+    box-shadow: rgba(40,103,178,0.6) ;
+  }
+  .uni-contact .fa-instagram:hover{
+    cursor: pointer;
+    color: rgb(225,48,108);
+    transform: translateY(-3px);
+    box-shadow: rgba(225,48,108, 0.6);
+  }
+  .uni-contact .fa-facebook-f:hover{
+    cursor: pointer;
+    color: rgb(66, 103, 178);
+    transform: translateY(-3px);
+    box-shadow: rgba(66, 103, 178, 0.6);
+  }
+  .uni-contact .fa-youtube:hover{
+    cursor: pointer;
+    color: rgb(255, 0 ,0);
+    transform: translateY(-3px);
+    box-shadow: rgba(255, 0, 0, 0.6);
+  }
+  #copyright-line{
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
 
 div[class="footer-bottom"] p {
     font-size: 12px;
