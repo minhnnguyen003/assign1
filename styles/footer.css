@@ -49,3 +49,24 @@ div[class="footer-bottom"] p {
     font-size: 12px;
 
 }
+
+.footer-row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .footer-col{
+    padding: 10px;
+  }
+  .swinburne-logo{
+    margin-bottom: 20px;
+  }
+  .footer-col h3{
+    width: fit-content;
+    margin-bottom: 20px;
+    font-family: poppins,sans-serif;
+    font-size: 15px;
+  }
