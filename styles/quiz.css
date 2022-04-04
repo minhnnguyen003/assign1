@@ -1,3 +1,10 @@
+/*
+filename: quizz.css
+author: Viet Dung Tran
+created: 16/03/2022
+last modified: 27/03/2022
+description: CSS for quizz.html
+*/
 #quizz-body{
     background: url("../images/background.jpg");
     background-size: cover;
