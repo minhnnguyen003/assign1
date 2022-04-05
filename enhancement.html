@@ -2,125 +2,217 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="Enhancement">
-    <meta name="author" content="Minh Nhat Nguyen">
-    <title>Enhancement</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
-    <link rel="stylesheet" href="./styles/style.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="Enhancement">
+  <meta name="author" content="Minh Nhat Nguyen">
+  <title>Enhancement</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <link rel="stylesheet" href="./styles/style.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
 
 </head>
 
 <body class="enhancement">
-    <header>
-        <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
-                <li><a href="./topic.html">Topic</a></li>
-                <li><a href="./quiz.html">Quiz</a></li>
-                <li><a href="./enhancement.html" class="active">Enhancement</a></li>
-            </ul>
-            </div>
-        </nav>
-    </header>
+  <div class="background-image"></div>
+  <header>
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
+        <li><a href="./topic.html">Topic</a></li>
+        <li><a href="./quiz.html">Quiz</a></li>
+        <li><a href="./enhancement.html" class="active">Enhancement</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Enhancement</h1>
-        <article>
-            <details class="fade-up">
-                <summary>CSS Flex</summary>
-                We use flex in our Enhancement Page in the following section:
-                <ol>
-                    <li>Navigation bar
-                        <ul class="no-list-icon">
-                            <li>
-                                <details>
-                                    <summary>Source code</summary>
-                                    <a class="code-link" href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
-                                        <code>
-                                        .nav-bar
-                                            {
-                                                display: flex;
-                                                background-color: #0e0d0d;
-                                                justify-content: center;
-                                                align-items: center;
-                                            }
-                                        </code>
-                                    </a>
-                                    <p class="hidden-bubble">Click on the code to go to full file</p>
-                                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it easier to maintain and to make code clearer</p>
-                                </details>
-                            </li>
-                        </ul>
-                    </li>
-                    <li></li>
-                </ol>
-            </details>
-        </article>
-    </main>
-    <aside>
+  <main class="container">
 
-    </aside>
-    <footer class="footer">
-        <div class="row">
-          <div class="col">
-            <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200" height="100" class="swinburne-logo"></a>
-            <div class="uni-contact">
-              <h4 id="swinburne">Connect with Swinburne</h4>
-                <a href="https://www.facebook.com/swinburneuniversityoftechnology" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="https://twitter.com/swinburne" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/school/swinburne-university-of-technology/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/swinburne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-          </div>
-          <div class="col">
-            <h3>Members</h3>
-            <ul class="footer-list">
-              <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
-              <li class="footer-list-item">Md Arefin Newaz Sojol</li>
-              <li class="footer-list-item">Ahmed Fuzail Mohamed Imran</li>
-              <li class="footer-list-item">Viet Dung Tran</li>
-              <li class="footer-list-item">Minh Nhat Nguyen</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Contact details</h3>
-            <ul class="footer-list">
-              <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor">101224555@student.swin.edu.au</a></li>
-              <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au" class="footer-list-anchor">103535741@student.swin.edu.au</a></li>
-              <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au" class="footer-list-anchor">103831821@student.swin.edu.au</a></li>
-              <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au" class="footer-list-anchor">103486496@student.swin.edu.au</a></li>
-              <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor">103534696@student.swin.edu.au</a></li>
-            </ul>
-          </div>
-          <div class="col">
-            <h3>Address</h3>
-            <ul class="footer-list">
-              <li class="footer-list-item">John Street</li>
-              <li class="footer-list-item">Hawthorn VIC 3122</li>
-              <li class="footer-list-item">Melbourne, Australia</li>
-            </ul>
-          </div>
-    
-    
-          <hr id="copyright-line">
-        <div class="footer-bottom">
-          <p class ="copyright">All Right reserved by &copy;Swinburne University</p>
-          <p class="copyright">Mark up by Minh Nhat Nguyen</p>
+    <article class="main-article">
+      <h1>Enhancement</h1>
+      <article class="sub-article">
+        <details class="fade-up">
+          <summary class="head-summary">CSS Flex</summary>
+          We use flex in our pages in the following section:
+          <ol>
+            <li>Navigation bar
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <a target="_blank" class="code-link"
+                      href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
+                      <code>
+                                          .nav-bar
+                                              {
+                                                  display: flex;
+                                                  background-color: #0e0d0d;
+                                                  justify-content: center;
+                                                  align-items: center;                                            }
+                                          </code>
+                    </a>
+                    <p class="hidden-bubble">Click on the code to go to full file</p>
+                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
+                      easier to maintain and to make code clearer</p>
+                  </details>
+                </li>
+              </ul>
+            </li>
+            <li>Implement to arrange items as well as space distribution between items in quiz page
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <a target="_blank" class="code-link"
+                      href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
+                      <code>
+                                          .nav-bar
+                                              {
+                                                  display: flex;
+                                                  background-color: #0e0d0d;
+                                                  justify-content: center;
+                                                  align-items: center;                                            }
+                                          </code>
+                    </a>
+                    <p class="hidden-bubble">Click on the code to go to full file</p>
+                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
+                      easier to maintain and to make code clearer</p>
+                    <p class="description"><strong>Source:</strong> <a class="ellipsis code-link" target="_blank"
+                        href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch?...</a>
+                    </p>
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
+      <article class="sub-article">
+        <details class="fade-up">
+          <summary class="head-summary">CSS Grid</summary>
+          We use flex in our Enhancement Page in the following section:
+          <ol>
+            <li>Navigation bar
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <a target="_blank" class="code-link"
+                      href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
+                      <code>
+                                          .nav-bar
+                                              {
+                                                  display: flex;
+                                                  background-color: #0e0d0d;
+                                                  justify-content: center;
+                                                  align-items: center;                                            }
+                                          </code>
+                    </a>
+                    <p class="hidden-bubble">Click on the code to go to full file</p>
+                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
+                      easier to maintain and to make code clearer</p>
+                  </details>
+                </li>
+              </ul>
+            </li>
+            <li>Implement to arrange items as well as space distribution between items in quiz page
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <a target="_blank" class="code-link"
+                      href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
+                      <code>
+                                          .nav-bar
+                                              {
+                                                  display: flex;
+                                                  background-color: #0e0d0d;
+                                                  justify-content: center;
+                                                  align-items: center;                                            }
+                                          </code>
+                    </a>
+                    <p class="hidden-bubble">Click on the code to go to full file</p>
+                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
+                      easier to maintain and to make code clearer</p>
+                    <p class="description"><strong>Source:</strong> <a class="ellipsis code-link" target="_blank"
+                        href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch?...</a>
+                    </p>
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
+    </article>
+  </main>
+  <footer class="footer">
+    <div class="row">
+      <div class="col">
+        <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200"
+            height="100" class="swinburne-logo"></a>
+        <div class="uni-contact">
+          <h4 id="swinburne">Connect with Swinburne</h4>
+          <a href="https://www.facebook.com/swinburneuniversityoftechnology" target="_blank"><i
+              class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://twitter.com/swinburne" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/school/swinburne-university-of-technology/" target="_blank"><i
+              class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/swinburne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </div>
-      </footer>
+      </div>
+      <div class="col">
+        <h3>Members</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
+          <li class="footer-list-item">Md Arefin Newaz Sojol</li>
+          <li class="footer-list-item">Ahmed Fuzail Mohamed Imran</li>
+          <li class="footer-list-item">Viet Dung Tran</li>
+          <li class="footer-list-item">Minh Nhat Nguyen</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Contact details</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au"
+              class="footer-list-anchor">101224555@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au"
+              class="footer-list-anchor">103535741@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au"
+              class="footer-list-anchor">103831821@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au"
+              class="footer-list-anchor">103486496@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au"
+              class="footer-list-anchor">103534696@student.swin.edu.au</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Address</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">John Street</li>
+          <li class="footer-list-item">Hawthorn VIC 3122</li>
+          <li class="footer-list-item">Melbourne, Australia</li>
+        </ul>
+      </div>
+
+
+      <hr id="copyright-line">
+      <div class="footer-bottom">
+        <p class="copyright">All Right reserved by &copy;Swinburne University</p>
+        <p class="copyright">Mark up by Minh Nhat Nguyen</p>
+      </div>
+  </footer>
 </body>
 
 </html>

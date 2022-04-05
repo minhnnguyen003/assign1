@@ -6,9 +6,16 @@ last modified: 27/03/2022
 description: Styling for navigation bar inside every page, linking through style.css, part of Part 1 Assignment of unit COS10026
 */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
 .nav-bar
 {
     display: flex;
+    overflow: visible;
     background-color: #0e0d0d;
     justify-content: center;
     align-items: center;
