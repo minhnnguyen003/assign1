@@ -46,9 +46,32 @@ header {
     padding-right: 5px;
 }
 
+.fa-bars {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    display: none !important;
+}
 
-/* @media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 768px) {
     .nav-bar {
-        
+        display: block;
     }
-} */
+    .nav-bar li {
+        display: block;
+    }
+    .nav-bar ul {
+        display: none;
+    }
+    .navbar-show {
+        display: block !important;
+        width: 90%;
+        z-index: 100000000;
+    }
+    .fa-bars {
+        padding: 20px;
+        display: inline-block;
+        border: 1px solid black;
+    }
+}

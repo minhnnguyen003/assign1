@@ -9,24 +9,22 @@
     <title>Home Page</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link href="styles/index.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="styles/footer.css">
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
+    <link href="styles/style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body id="index">
-    <header>
-        <nav class="nav-bar">
-            <ul class="nav-links">
-                <li><a href="index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
-                <li><a href="topic.html">Topic</a></li>
-                <li><a href="quiz.html">Quiz</a></li>
-                <li><a href="enhancement.html" class="active">Enhancement</a></li>
-            </ul>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <nav class="nav-bar">
+      <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+      <ul class="nav-links" id="nav-list">
+        <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
+        <li><a href="./topic.html">Topic</a></li>
+        <li><a href="./quiz.html">Quiz</a></li>
+        <li><a href="./enhancement.html" class="active">Enhancement</a></li>
+      </ul>
+      </div>
+    </nav>
+  </header>
 
 <h1 id="index-html-head-title">Streaming Media and The Future It Holds</h1>
 <div class = "content">
@@ -43,7 +41,7 @@
     Unless content is being streamed live, users are able to pause, rewind, or fast-forward, just as they would with a downloaded file. Furthermore, since data order is unimportant, Streaming Media is sent and received according to network availability.
     </p>
     <p>Click the button below for an in-depth dive into Streaming Media!</p>
-    <a href="topic.html" id="click for more">
+    <a href="topic.html" id="click-for-more">
     <button id="more" type="button">Click For More</button>
     </a>
 </div>
@@ -101,5 +99,9 @@
 
 
 </body>
-
+<script>
+  function toggleNavbar() {
+    navBar = document.getElementById('nav-list').classList.toggle('navbar-show')
+  }
+</script>
 </html>

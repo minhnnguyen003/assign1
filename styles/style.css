@@ -1,3 +1,11 @@
+/*
+filename: style.css
+author: Minh Nhat Nguyen, Viet Dung Tran, Daniel
+created: 22/03/2022
+last modified: 27/03/2022
+description: style.css, this file contain some basic style that apply for all element and the link to other CSS files , inside assignment Part 1 COS10026
+*/
+
 @import url(./enhancement.css);
 @import url(./navbar.css);
 @import url(./quiz.css);

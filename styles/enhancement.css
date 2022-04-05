@@ -10,17 +10,6 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     background-color: #cdcdcd;
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -9999999;
-    background: url(../images/enhancment-bg.jpg) no-repeat;
-    background-size: cover;
-}
-
 .container {
     width: 100%;
     min-height: 750px;
@@ -28,6 +17,8 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     grid-template-columns: 15% auto 15%;
     grid-template-rows: 50px auto;
     z-index: 1;
+    background: url(../images/enhancment-bg.jpg) no-repeat;
+    background-size: cover;
 }
 
 .container article {
@@ -58,13 +49,13 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     transition: ease-in-out .8s;
 }
 
-.container article {
-    animation: slidefromright 2s ease-out;
+.container article > * {
+    animation: slidefromright 1s ease-out;
 }
 
 .container article h1::before {
     content: "";
-    margin: 8.5px 0 0 -19px;
+    margin: 9px 0 0 -19px;
     height: 36px;
     width: 10px;
     background-color: rgb(223, 45, 45);
@@ -74,13 +65,13 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 }
 
 .container article h1:hover::before {
-    width: 250px;
+    width: 265px;
 }
 
 
 @keyframes slidefromright {
     0% {
-        transform: translateX(300%);
+        transform: translateX(100%);
     }
     100% {
         transform: translateX(0%);
@@ -107,9 +98,9 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 }
 
 code {
-    background-color: #eee;
+    background-color: rgba(238, 238, 238, 0.747);
     border-radius: 3px;
-    font-family: courier, monospace;
+    font-family: Consolas, 'Courier New', Courier, monospace;
     font-size: 15px;
     padding: 0 3px;
 }
@@ -134,4 +125,41 @@ details ol {
     text-overflow: ellipsis;
     overflow: hidden;
     color: #61c121
+}
+
+#subtitle {
+    font-weight: 400;
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .main-article {
+        width: 100%;
+    }
+    .container {
+        display: block;
+        min-height: 0px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-article {
+        width: 100%;
+    }
+    .sub-article, .head-summary, .no-list-icon > * {
+        font-size: 24px !important;
+    }
+    #subtitle {
+        font-size: 20px;
+    }
+    .container {
+        display: block;
+        min-height: 0px;
+    }
+    .container article h1::before {
+        display: none;
+    }
+    .container article > * {
+        animation: none
+    }
 }
