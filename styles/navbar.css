@@ -71,7 +71,7 @@ header {
     }
     .fa-bars {
         padding: 20px;
-        display: inline-block;
+        display: inline-block !important;
         border: 1px solid black;
     }
 }
