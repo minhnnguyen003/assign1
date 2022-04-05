@@ -8,58 +8,98 @@
     <meta name="author" content="Ahmed Fuzail Mohamed Imran"  />
     <title>Home Page</title>
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="styles/index.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/footer.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="styles/navbar.css">
 </head>
 
-<body>
+<body id="index">
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
+                <li><a href="topic.html">Topic</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="enhancement.html" class="active">Enhancement</a></li>
+            </ul>
+            </div>
+        </nav>
+    </header>
 
-<header>
-    <hr>
-        <a href="https://www.netflix.com">
-            <img src="./images/netflix_24x24.jpg" alt="Netflix Logo" title="This will take you to the Netflix Website">
-            Netflix
-        </a>
-        <a href="https://www.primevideo.com">
-            <img src="./images/primevideo.jpg" alt="Amazon Prime Logo" title="This will take you to the Amazon Prime Video Website">
-            Amazon Prime Video
-        </a>
-        <a href="https://www.primevideo.com">
-            <img src="./images/disneyplus.jpeg" alt="Disney+ Logo" title="This will take you to the Disney + Website">
-            Disney+
-        </a>
-        <a href="https://www.primevideo.com">
-            <img src="./images/hbomax.jpg" alt="HBO Max Logo" title="This will take you to the HBO Max Website">
-            HBO Max
-        </a>
-        <a href="https://www.primevideo.com">
-            <img src="./images/youtube.png" alt="Youtube Logo" title="This will take you to the Youtube Website">
-            Youtube
-        </a>
-        <a href="https://www.primevideo.com">
-            <img src="./images/twitch.jpg" alt="Twitch Logo" title="This will take you to the Twitch Website">
-            Twitch
-        </a>
-    <hr>
-</header>
-<nav>
-    <h3><a href="index.php">Home</a> |
-    <a href="topic.php">Topics</a> |
-    <a href="quiz.php">Quiz</a></h3>
-</nav>
 <h1>Streaming Media and The Future It Holds</h1>
-<br>
-<a href="topic.php">
-    <button type="button">Click For More</button>
-</a>
-
-<footer>
-    <hr>
-    Mark up by:
-    <a href="mailto:103831821@student.swin.edu.au" target="_self" title="Send an email to Ahmed Fuzail Mohamed Imran">
-        Ahmed Fuzail Mohamed Imran
+<div class = "content">
+    <p>
+    Streaming Media. It is a fundamental part of our lives. Whether it is streaming vidos on YouTube, streaming movies on Netflix or streaming songs 
+    on Spotify,we all do it. But what exactly is Streaming Media and how does it affect our future and if it has any implications. </p>
+    
+    <p>
+    Streaming Media is the process of delivering multimedia data (such as video or audio) from a streaming service provider to an end-user. Streaming Media delivers audio and video elements using basic HTTP, TCP/IP, and HTML protocols.
+    Video or audio content is streamed (i.e. transmitted) over the Internet in compressed form. It is then played back immediately, rather than being saved to the hard drive for playback at a later time. 
+    </p>
+    <p>
+    This eliminates the need to wait for a file to be completely downloaded before viewing or listening.
+    Unless content is being streamed live, users are able to pause, rewind, or fast-forward, just as they would with a downloaded file. Furthermore, since data order is unimportant, Streaming Media is sent and received according to network availability.
+    </p>
+    <p>Click the button below for an in-depth dive into Streaming Media!</p>
+    <a href="topic.html" id="click for more">
+    <button id="more" type="button">Click For More</button>
     </a>
-    <hr>
-</footer>
+</div>
+  <footer class="footer">
+    <div class="footer-row">
+      <div class="footer-col">
+        <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200" height="100" class="swinburne-logo" alt="Swinburne University"></a>
+        <div class="uni-contact">
+          <h4 id="swinburne">Connect with Swinburne</h4>
+            <a href="https://www.facebook.com/swinburneuniversityoftechnology" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/swinburne" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/swinburne-university-of-technology/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/swinburne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+      </div>
+      <div class="footer-col">
+        <h3>Members</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
+          <li class="footer-list-item">Md Arefin Newaz Sojol</li>
+          <li class="footer-list-item">Ahmed Fuzail Mohamed Imran</li>
+          <li class="footer-list-item">Viet Dung Tran</li>
+          <li class="footer-list-item">Minh Nhat Nguyen</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact details</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor" target="_blank">101224555@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au" class="footer-list-anchor" target="_blank">103535741@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au" class="footer-list-anchor" target="_blank">103831821@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au" class="footer-list-anchor" target="_blank">103486496@student.swin.edu.au</a></li>
+          <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor" target="_blank">103534696@student.swin.edu.au</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Address</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">John Street</li>
+          <li class="footer-list-item">Hawthorn VIC 3122</li>
+          <li class="footer-list-item">Melbourne, Australia</li>
+        </ul>
+      </div>
+    </div>
+
+
+      <hr id="copyright-line">
+    <div class="footer-bottom">
+      <p class ="copyright">All Right reserved by &copy;Swinburne University</p>
+      <p class="copyright">Mark up by: Viet Dung Tran</p>
+    </div>
+  </footer>
+
+
 </body>
 
 </html>
