@@ -22,11 +22,6 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 }
 
 .container {
-    /* width: 70%;
-    min-height: 400px;
-    min-height: 700px;
-    float: left;
-    padding: 50px 0 0 30px; */
     width: 100%;
     min-height: 750px;
     display: grid;
@@ -47,7 +42,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 }
 
 .main-article {
-    padding: 50px;
+    padding: 30px 50px 50px 50px;
     background-color: rgba(1,1,1, .7);
 }
 
@@ -69,7 +64,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 
 .container article h1::before {
     content: "";
-    margin: 8.5px 0 0 -9px;
+    margin: 8.5px 0 0 -19px;
     height: 36px;
     width: 10px;
     background-color: rgb(223, 45, 45);
@@ -92,17 +87,23 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     }
 }
 
+.link {
+    text-decoration: none;
+}
+
 .code-link {
     text-decoration: none;
 }
 
-.hidden-bubble {
+.code-link::after {
+    content: "Click on the code to go to full file";
+    margin-left: 10px;
+    color: #61c121;
     display: none;
 }
 
-.code-link:hover + .hidden-bubble{
-    display: block;
-    color: #61c121;
+.code-link:hover::after {
+    display: inline-block;
 }
 
 code {
