@@ -46,22 +46,23 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 
 .container article h1 {
     font-size: 36px;
-    transition: ease-in-out .8s;
+    /* transition: ease-in-out .8s; */
 }
 
 .container article > * {
-    animation: slidefromright 1s ease-out;
+    animation: slidefromright 2s ease-in-out;
 }
 
 .container article h1::before {
     content: "";
-    margin: 9px 0 0 -19px;
+    margin: 8.5px 0 0 -12px;
     height: 36px;
     width: 10px;
     background-color: rgb(223, 45, 45);
     z-index: -1;
     position: absolute;
     transition: ease-in-out .6s;
+    animation: highlight 3s .5s ease-in-out;
 }
 
 .container article h1:hover::before {
@@ -71,10 +72,22 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 
 @keyframes slidefromright {
     0% {
-        transform: translateX(100%);
+        transform: translateX(400%);
     }
     100% {
         transform: translateX(0%);
+    }
+}
+
+@keyframes highlight {
+    0% {
+        width: 0px;
+    }
+    50% {
+        width: 520px;
+    }
+    100% {
+        width: 10px;
     }
 }
 

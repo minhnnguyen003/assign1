@@ -2,7 +2,7 @@
 File: index.css
 Author: Daniel Cornelius Wong Yui Herng
 created: 22/03/2022
-last modified: 06/04/2022 12:49 AM by Minh Nhat Nguyen
+last modified: 06/04/2022 3:49 AM by Minh Nhat Nguyen
 description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 */
 
@@ -32,7 +32,6 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 .content p {
 	padding:15px;
 	text-align: justify;
-	text-justify: inter-word;
 }
 
 #index-html-head-title{
@@ -69,4 +68,24 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 	background-color:rgb(125, 228, 255);
 	box-shadow: 15px 15px 25px rgba(36, 160, 255, 0.3);
 	border-color: rgb(67, 210, 247)
+}
+
+
+/* Minh Nhat Nguyen modification */
+@media screen and (max-width: 1024px) {
+	.content {
+		width: 100%;
+		padding: 0;
+		margin: auto;
+		font-size: 28px;
+		line-height: 2em;
+	}
+	#index-html-head-title {
+		margin-top: 20px;
+		font-size: 66px;
+	}
+	#more {
+		width: 80%;
+		font-size: 32px;
+	}
 }

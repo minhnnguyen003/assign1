@@ -31,7 +31,8 @@
         <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
         <li><a href="./topic.html"><span class="icon"><i class="fa-solid fa-lightbulb"></i></span>Topic</a></li>
         <li><a href="./quiz.html"><span class="icon"><i class="fa-solid fa-circle-question"></i></i></span>Quiz</a></li>
-        <li><a href="./enhancement.html" class="active">Enhancement</a></li>
+        <li><a href="./enhancement.html" class="active"><span class="icon"><i
+                class="fas fa-sliders-h"></i></span>Enhancement</a></li>
       </ul>
       </div>
     </nav>
@@ -125,9 +126,9 @@
       <article class="sub-article">
         <details class="fade-up">
           <summary class="head-summary">CSS @Keyframe</summary>
-          We use Keyframe to make animation in our pages in the following section:
+          We use Keyframe to define animation in our pages in enhancement and quiz pages:
           <ol>
-            <li>Animation of the enhancement and quiz pages
+            <li>Enhancement
               <ul class="no-list-icon">
                 <li>
                   <details>
@@ -140,20 +141,94 @@
                         @keyframes slidefromright { 0%...
                                           </code>
                         </a>
-                        <p class="description"><strong>Description: </strong> We use Keyframe to make some animation for
-                          the website, to make it looks more friendly</p>
+                        <p class="description"><strong>Description: </strong> When the page is loading, the elements
+                          will first be stay in Width that equal to 300% of the page width, then it will move to the
+                          original place</p>
                       </li>
-                      <li>
+                      <li>Quiz
                         <a target="_blank" class="code-link"
                           href="https://github.com/minhnnguyen003/assign1/blob/11ca52e88ac27813c6e74ec23f035e108e34b264/styles/quiz.css#L272-L295">
                           <code>
                         @keyframes highlight-ans{ 0%...
                                           </code>
                         </a>
-                        <p class="description"><strong>Description: </strong> ?</p>
-                        <p class="description"><strong>Source:</strong> <a class="ellipsis link" target="_blank"
-                            href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch?...</a>
-                        </p>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
+      <article class="sub-article">
+        <details class="fade-up">
+          <summary class="head-summary">CSS transition</summary>
+          We use transition in the pseudo-element to make some smooth effect on enhancement to make the user feeling like they can interact
+          with page:
+          <ol>
+            <li>In our enhancement page
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            .container article h1::before {transition: ease-in-out .6s;}
+                          </code>
+                        </a>
+                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title, there will be a red line to run through the title to highlight it</p>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
+      <article class="sub-article">
+        <details class="fade-up">
+          <summary class="head-summary">CSS Pseudo-element </summary>
+          We use pseudo-element to make some effect on enhancement and some instructions for user:
+          <ol>
+            <li>::before
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            .container article h1::before {...
+                          </code>
+                        </a>
+                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title, there will be a red line to run through the title to highlight it</p>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </li>
+            <li>::after
+              <ul class="no-list-icon">
+                <li>
+                  <details>
+                    <summary>Source code</summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            .container article h1::before {...
+                          </code>
+                        </a>
+                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title, there will be a red line to run through the title to highlight it</p>
                       </li>
                     </ul>
                   </details>
@@ -221,7 +296,8 @@
     <hr id="copyright-line">
     <div class="footer-bottom">
       <p class="copyright">All Right reserved by &copy;Swinburne University</p>
-      <p class="copyright">Mark up by: <a class="link white" href="mailto:103534696@student.swin.edu.au">Minh Nhat Nguyen</a></p>
+      <p class="copyright">Mark up by: <a class="link white" href="mailto:103534696@student.swin.edu.au">Minh Nhat
+          Nguyen</a></p>
     </div>
   </footer>
 </body>
@@ -230,4 +306,5 @@
     navBar = document.getElementById('nav-list').classList.toggle('navbar-show')
   }
 </script>
+
 </html>
