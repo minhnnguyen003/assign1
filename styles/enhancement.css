@@ -19,6 +19,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     z-index: 1;
     background: url(../images/enhancment-bg.jpg) no-repeat;
     background-size: cover;
+    padding-bottom: 50px;
 }
 
 .container article {

@@ -19,7 +19,7 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 	line-height: 24px;
 	max-width: 1500px;
 	text-align: center;
-
+	padding-bottom: 30px;
 	background-color: rgba(0, 0, 0,0.7);
 	padding-top: 34px;
 	width: 54%;
