@@ -44,17 +44,18 @@
       <h1 class="article-title">Enhancement</h1>
       <h4 id="subtitle">Please click on the code to see full code that is store in Github<sup>&#174;</sup></h4>
       <article class="sub-article">
-        <details class="fade-up">
+        <details>
           <summary class="head-summary">CSS Flex</summary>
           We use flex in our pages in the following section:
-          <ol>
-            <li>Navigation bar
+          <ol class="bigger-list">
+            <li>
+              <h4>Navigation bar</h4>
               <ul class="no-list-icon">
                 <li>
-                  <details>
-                    <summary>Source code</summary>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
                     <a target="_blank" class="code-link"
-                      href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
+                      href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L15-L22">
                       <code>
                                           .nav-bar
                                               {
@@ -62,17 +63,24 @@
                                                   ...}
                                           </code>
                     </a>
-                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
-                      easier to maintain and to make code clearer</p>
+                    <!-- <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
+                      easier to maintain and to make code clearer</p> -->
+                  </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    Firstly, I use <code>display: flex</code> to define the nav tag as a flex element. After that, to
+                    set all the icon in the navigation bar to center, i just <code>Justify-content: center</code> to
+                    align it center horizontally and <code>align-items: center</code> to align it center vertically
                   </details>
                 </li>
               </ul>
             </li>
-            <li>Implement to arrange items as well as space distribution between items in quiz page
+            <li>
+              <h4>Implement to arrange items as well as space distribution between items in quiz page</h4>
               <ul class="no-list-icon">
                 <li>
-                  <details>
-                    <summary>Source code</summary>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
                     <a target="_blank" class="code-link"
                       href="https://github.com/minhnnguyen003/assign1/blob/8200d3c83fc63eca4534f8f00f583c82a09c6e36/styles/navbar.css#L1-L7">
                       <code>
@@ -81,12 +89,19 @@
                                                   display: flex;}
                                           </code>
                     </a>
-                    <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
-                      easier to maintain and to make code clearer</p>
-                    <p class="description"><strong>Source:</strong> <a class="ellipsis link" target="_blank"
-                        href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch?...</a>
-                    </p>
+
                   </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    Implement to arrange items as well as space distribution between items in quiz page. The flex box
+                    was displayed in line 8 23 81 142 210. To use flex, I also add Justify-content. This property will
+                    specifically align the flex box items that used the available spaces inside flex box to align items.
+                    Here, I’ve used <code>“space-between”</code> and <code>“center”</code> as the value. One will add
+                    space between the item inside flex box and one will aligns the items center
+                  </details>
+                  <p class="description"><strong>Source:</strong> <a class="ellipsis link" target="_blank"
+                      href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch?...</a>
+                  </p>
                 </li>
               </ul>
             </li>
@@ -94,17 +109,18 @@
         </details>
       </article>
       <article class="sub-article">
-        <details class="fade-up">
+        <details>
           <summary class="head-summary">CSS Grid</summary>
           We use grid in our Enhancement Page in the following section:
           <ol>
-            <li>Enhancement page body
+            <li>
+              <h4>Enhancement page body</h4>
               <ul class="no-list-icon">
                 <li>
-                  <details>
-                    <summary>Source code</summary>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
                     <a target="_blank" class="code-link"
-                      href="https://github.com/minhnnguyen003/assign1/blob/11ca52e88ac27813c6e74ec23f035e108e34b264/styles/enhancement.css#L24-L47">
+                      href="https://github.com/minhnnguyen003/assign1/blob/11ca52e88ac27813c6e74ec23f035e108e34b264/styles/enhancement.css#L13-L32">
                       <code>
                                           .container
                                               {
@@ -113,9 +129,15 @@
                                               }
                                           </code>
                     </a>
-                    <p class="description"><strong>Description: </strong> I use Grid to divide the website into parts,
-                      which helps me to align the website easier, and Grid also helps me a lot while making the website
-                      responsive</p>
+                  </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    I use Grid to divide the website into parts, with <code>"display:grid"</code> to define the big main
+                    tag as a container. The <code>grid-template-columns</code> is used to define the columns and rows
+                    for the grid. <code>"grid-column-start"</code> and <code>"grid-row-start"</code> is used to set the
+                    start column and of the block and same for <code>"grid-column-end"</code> and
+                    <code>"grid-row-end"</code>. I found grid really helpful for me since it helps me to divide the page
+                    parts easier.
                   </details>
                 </li>
               </ul>
@@ -124,36 +146,47 @@
         </details>
       </article>
       <article class="sub-article">
-        <details class="fade-up">
-          <summary class="head-summary">CSS @Keyframe</summary>
-          We use Keyframe to define animation in our pages in enhancement and quiz pages:
+        <details>
+          <summary class="head-summary">CSS @Keyframe and Animation</summary>
+          We use Keyframe to define animation in our pages in enhancement and quiz pages, and animation property to make
+          basic animation for enhancement page while loading:
           <ol>
-            <li>Enhancement
+            <li>
+              <h4>Enhancement</h4>
               <ul class="no-list-icon">
                 <li>
-                  <details>
-                    <summary>Source code</summary>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
                     <ul class="no-list-icon">
                       <li>
                         <a target="_blank" class="code-link"
-                          href="https://github.com/minhnnguyen003/assign1/blob/4b0b30a6d2aef90278c5d4644dea63eaefb6442c/styles/enhancement.css#L81-L88">
+                          href="https://github.com/minhnnguyen003/assign1/blob/4b0b30a6d2aef90278c5d4644dea63eaefb6442c/styles/enhancement.css#L73-L80">
                           <code>
                         @keyframes slidefromright { 0%...
                                           </code>
                         </a>
-                        <p class="description"><strong>Description: </strong> When the page is loading, the elements
-                          will first be stay in Width that equal to 300% of the page width, then it will move to the
-                          original place</p>
                       </li>
-                      <li>Quiz
+                      <li>
                         <a target="_blank" class="code-link"
-                          href="https://github.com/minhnnguyen003/assign1/blob/11ca52e88ac27813c6e74ec23f035e108e34b264/styles/quiz.css#L272-L295">
+                          href="https://github.com/minhnnguyen003/assign1/blob/4b0b30a6d2aef90278c5d4644dea63eaefb6442c/styles/enhancement.css#L52-L54">
                           <code>
-                        @keyframes highlight-ans{ 0%...
-                                          </code>
+                            .container article > * {
+                              animation: slidefromright 2s ease-in-out;
+                          }
+                          </code>
                         </a>
                       </li>
                     </ul>
+                  </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    When the page is loaded, the elements will first be stay in Width that equal to 400% of the page
+                    width, then it will move to the original place. We combine this with
+                    <code>animation: slidefromright 2s ease-in-out;</code>
+                    <figure class="enhancement-figure">
+                      <img src="./images/keyframe.gif" alt="example of how the ::after pseudo-element works">
+                      <figcaption>How @keyframe and animation works in my webpage</figcaption>
+                    </figure>
                   </details>
                 </li>
               </ul>
@@ -162,16 +195,93 @@
         </details>
       </article>
       <article class="sub-article">
-        <details class="fade-up">
+        <details open>
+          <summary class="head-summary">CSS Pseudo-element and Pseudo-Class</summary>
+          We use pseudo-element to make a small change on enhancement page title and add some effect so that user can
+          interact with it:
+          <ol>
+            <li>
+              <h4>::before</h4>
+              <ul class="no-list-icon">
+                <li>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            .container article h1::before {content: "";...}
+                          </code>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    Firstly, I use the <code>::before</code> to make an element that display before the title, then I
+                    use some basic styling with <code>height</code>, <code>width</code> and <code>margin</code>, to
+                    align its position, <code>background-color</code> to set it background-color. Then we use
+                    <code>.container article h1:hover::before {...</code> so that when user hover on the title with h1
+                    tag, the width will become 265px, and I also add some CSS transition to make it happen smoothly.
+                    <figure class="enhancement-figure">
+                      <img src="./images/before.gif" alt="example of how the ::after pseudo-element works">
+                      <figcaption>How the ::before pseudo-element works</figcaption>
+                    </figure>
+                  </details>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>::after</h4>
+              <ul class="no-list-icon">
+                <li>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            .code-link::after {
+                              content: "Click on the code to go to full file";
+                              margin-left: 10px;
+                              color: #61c121;
+                              display: none;
+                            }
+                          </code>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    The same thing happens to <code>::after</code>, and if we click on the Implement code block, it will
+                    open the page to the source code in github with the selected code highlighted. Lets look at the gif
+                    below to see more about what really happens when we hover
+                    <figure class="enhancement-figure">
+                      <img src="./images/before.gif" alt="example of how the ::after pseudo-element works">
+                      <figcaption>Example of how the ::before pseudo-element works</figcaption>
+                    </figure>
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
+      <article class="sub-article">
+        <details>
           <summary class="head-summary">CSS transition</summary>
-          We use transition in the pseudo-element to make some smooth effect on enhancement to make the user feeling like they can interact
+          We use transition in the pseudo-element to make some smooth effect on enhancement to make the user feeling
+          like they can interact
           with page:
           <ol>
             <li>In our enhancement page
               <ul class="no-list-icon">
                 <li>
-                  <details>
-                    <summary>Source code</summary>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
                     <ul class="no-list-icon">
                       <li>
                         <a target="_blank" class="code-link"
@@ -180,7 +290,8 @@
                             .container article h1::before {transition: ease-in-out .6s;}
                           </code>
                         </a>
-                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title, there will be a red line to run through the title to highlight it</p>
+                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title,
+                          there will be a red line to run through the title to highlight it</p>
                       </li>
                     </ul>
                   </details>
@@ -190,54 +301,7 @@
           </ol>
         </details>
       </article>
-      <article class="sub-article">
-        <details class="fade-up">
-          <summary class="head-summary">CSS Pseudo-element </summary>
-          We use pseudo-element to make some effect on enhancement and some instructions for user:
-          <ol>
-            <li>::before
-              <ul class="no-list-icon">
-                <li>
-                  <details>
-                    <summary>Source code</summary>
-                    <ul class="no-list-icon">
-                      <li>
-                        <a target="_blank" class="code-link"
-                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
-                          <code>
-                            .container article h1::before {...
-                          </code>
-                        </a>
-                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title, there will be a red line to run through the title to highlight it</p>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-              </ul>
-            </li>
-            <li>::after
-              <ul class="no-list-icon">
-                <li>
-                  <details>
-                    <summary>Source code</summary>
-                    <ul class="no-list-icon">
-                      <li>
-                        <a target="_blank" class="code-link"
-                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
-                          <code>
-                            .container article h1::before {...
-                          </code>
-                        </a>
-                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title, there will be a red line to run through the title to highlight it</p>
-                      </li>
-                    </ul>
-                  </details>
-                </li>
-              </ul>
-            </li>
-          </ol>
-        </details>
-      </article>
+
     </article>
   </main>
   <footer class="footer">

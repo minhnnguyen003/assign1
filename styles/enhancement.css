@@ -14,7 +14,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     width: 100%;
     min-height: 400px;
     display: grid;
-    grid-template-columns: 15% auto 15%;
+    grid-template-columns: 10% 80% 10%;
     grid-template-rows: 50px auto;
     z-index: 1;
     background: url(../images/enhancment-bg.jpg) no-repeat;
@@ -97,6 +97,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 
 .code-link {
     text-decoration: none;
+    
 }
 
 .code-link::after {
@@ -114,8 +115,12 @@ code {
     background-color: rgba(238, 238, 238, 0.747);
     border-radius: 3px;
     font-family: Consolas, 'Courier New', Courier, monospace;
+    color: #551a8b;
     font-size: 15px;
     padding: 0 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 details .head-summary {
@@ -177,3 +182,8 @@ details ol {
     }
 }
 
+.enhancement-figure {
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+}
