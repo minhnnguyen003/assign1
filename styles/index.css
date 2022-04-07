@@ -81,7 +81,7 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 		line-height: 2em;
 	}
 	#index-html-head-title {
-		margin-top: 20px;
+		margin-top: 75px;
 		font-size: 66px;
 	}
 	#more {

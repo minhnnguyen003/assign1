@@ -11,7 +11,7 @@ header {
     top: 0;
     z-index: 10000;
 }
-
+/* Use flex to align list centered */
 .nav-bar
 {
     display: flex;
@@ -66,22 +66,24 @@ header {
     .nav-bar li {
         display: block;
     }
+
     .nav-bar ul {
         display: none;
     }
     .fa-bars {
         padding: 20px;
         display: inline-block !important;
-        border: 1px solid black;
+        border-right: 5px solid black;
     }
 }
+
 
 #menu-btn {
     display: none;
 }
-
+/* ~ means the select nearest siblings so  #menu-btn:checked ~ ul means select sibling ul tag*/
 #menu-btn:checked ~ ul {
     display: block !important;
-    width: 90%;
+    width: 100%;
     z-index: 100000000;
 }

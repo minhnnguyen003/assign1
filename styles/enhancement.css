@@ -48,7 +48,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 .container article h1 {
     font-size: 36px;
 }
-
+/* Apply animation to all content in the page */
 .container article > * {
     animation: slidefromright 2s ease-in-out;
 }
@@ -69,7 +69,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     width: 265px;
 }
 
-
+/* Defines Animations */
 @keyframes slidefromright {
     0% {
         transform: translateX(400%);
@@ -120,7 +120,7 @@ code {
     padding: 0 3px;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
+    white-space: wrap;
 }
 
 details .head-summary {
@@ -142,6 +142,7 @@ details ol {
 .ellipsis {
     text-overflow: ellipsis;
     overflow: hidden;
+    word-wrap: wrap;
     color: #61c121
 }
 
@@ -179,6 +180,10 @@ details ol {
     }
     .container article > * {
         animation: none
+    }
+
+    .enhancement-figure img {
+        width: 100%;
     }
 }
 
