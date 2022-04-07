@@ -1,0 +1,8 @@
+.reference .reference-link {
+	text-decoration: none;
+	font-style: italic;
+}
+
+.left-aligned {
+    text-align: left !important;
+}

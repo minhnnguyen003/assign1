@@ -5,16 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
+  <meta name="description" content="Enhancement for Assignment Part 1, COS10026">
   <meta name="keywords" content="Enhancement">
   <meta name="author" content="Minh Nhat Nguyen">
   <title>Enhancement</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
   <link rel="stylesheet" href="./styles/style.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -290,10 +285,16 @@
                             .container article h1::before {transition: ease-in-out .6s;}
                           </code>
                         </a>
-                        <p class="description"><strong>Description: </strong>When you hover on the enhancement title,
-                          there will be a red line to run through the title to highlight it</p>
                       </li>
                     </ul>
+                  </details>
+                  <details class="description" open>
+                    <summary><strong>Description: </strong></summary>
+                    As  I have mention on the pseudo-element, if we hover on the enhancement word, it will be highlight. And I use transition so it looks smoothly. <code>transition: ease-in-out .6s;</code> meaning that the transition will happen in 0.6 second and <code>ease-in-out</code> meaning that the transition effect will become slower at the start and the end.
+                    <figure class="enhancement-figure">
+                      <img src="./images/before.gif" alt="example of how the transition works">
+                      <figcaption>CSS transition properties makes the website looks better</figcaption>
+                    </figure>
                   </details>
                 </li>
               </ul>

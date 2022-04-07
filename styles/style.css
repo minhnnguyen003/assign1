@@ -7,6 +7,7 @@ description: style.css, this file contain some basic style that apply for all el
 */
 
 @import url(./enhancement.css);
+@import url(./reference.css);
 @import url(./navbar.css);
 @import url(./quiz.css);
 @import url(./footer.css);

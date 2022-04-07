@@ -18,7 +18,7 @@ footer {
 }
 
 .footer {
-  margin-top: 50px;
+  margin-top: 75px;
 }
 
 .footer-list .footer-list-item {
@@ -70,7 +70,7 @@ footer {
     font-size: 15px;
   }
   
-  .uni-contact .fa-brands{
+  .contact-us .fa-brands{
     width: 30px;
     height: 30px;
     text-align: center;
@@ -81,37 +81,37 @@ footer {
     background: #fff;
     margin-top: 10px;
   }
-  .uni-contact .fa-twitter:hover{
+  .contact-us .brand-icon:hover{
     cursor: pointer;
     color: rgb(82, 220, 255);
     transform: translateY(-3px);
     box-shadow:rgba(82, 220, 255, 0.6) ;
   }
-  .uni-contact .fa-linkedin:hover{
+  .contact-us .fa-linkedin:hover{
     cursor: pointer;
     color: rgb(40,103,178);
     transform: translateY(-3px);
     box-shadow: rgba(40,103,178,0.6) ;
   }
-  .uni-contact .fa-instagram:hover{
+  .contact-us .fa-instagram:hover{
     cursor: pointer;
     color: rgb(225,48,108);
     transform: translateY(-3px);
     box-shadow: rgba(225,48,108, 0.6);
   }
-  .uni-contact .fa-facebook-f:hover{
+  .contact-us .fa-facebook-f:hover{
     cursor: pointer;
     color: rgb(66, 103, 178);
     transform: translateY(-3px);
     box-shadow: rgba(66, 103, 178, 0.6);
   }
-  .uni-contact .fa-youtube:hover{
+  .contact-us .fa-youtube:hover{
     cursor: pointer;
     color: rgb(255, 0 ,0);
     transform: translateY(-3px);
     box-shadow: rgba(255, 0, 0, 0.6);
   }
-  #copyright-line{
+  copyright-line{
     width: 100%;
     border: 0;
     border-bottom: 1px solid #ccc;
