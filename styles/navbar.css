@@ -50,7 +50,7 @@ header {
     font-size: 36px;
     color: white;
     cursor: pointer;
-    display: none;
+    display: none !important;
 }
 
 
@@ -84,6 +84,6 @@ header {
 /* ~ means the select nearest siblings so  #menu-btn:checked ~ ul means select sibling ul tag*/
 #menu-btn:checked ~ ul {
     display: block !important;
-    width: 100%;
+    width: 90%;
     z-index: 100000000;
 }

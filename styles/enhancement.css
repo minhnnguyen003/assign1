@@ -93,6 +93,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 
 .link {
     text-decoration: none;
+    word-wrap: break-word;
 }
 
 .code-link {
@@ -163,7 +164,7 @@ details ol {
 @media screen and (max-width: 768px) {
     .main-article {
         width: 100%;
-        padding: 10px
+        padding: 100px 0 0 10px
     }
     .sub-article, .head-summary, .no-list-icon > * {
         font-size: 24px !important;

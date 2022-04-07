@@ -11,10 +11,6 @@
   <title>Enhancement</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <link rel="stylesheet" href="./styles/style.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-
 </head>
 
 <body class="enhancement">
@@ -26,11 +22,10 @@
       <ul class="nav-links" id="nav-list">
         <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
         <li><a href="./topic.html"><span class="icon"><i class="fa-solid fa-lightbulb"></i></span>Topic</a></li>
-        <li><a href="./quiz.html"><span class="icon"><i class="fa-solid fa-circle-question"></i></i></span>Quiz</a></li>
+        <li><a href="./quiz.html"><span class="icon"><i class="fa-solid fa-circle-question"></i></span>Quiz</a></li>
         <li><a href="./enhancement.html" class="active"><span class="icon"><i
                 class="fas fa-sliders-h"></i></span>Enhancement</a></li>
       </ul>
-      </div>
     </nav>
   </header>
 
@@ -95,8 +90,8 @@
                     Here, I’ve used <code>“space-between”</code> and <code>“center”</code> as the value. One will add
                     space between the item inside flex box and one will aligns the items center
                   </details>
-                  <p class="description"><strong>Source:</strong> <a class="ellipsis link" target="_blank"
-                      href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch?...</a>
+                  <p class="description"><strong>Source:</strong> <a class="link" target="_blank"
+                      href="https://www.youtube.com/watch?v=1Rs2ND1ryYc&t=14601s">https://www.youtube.com/watch...</a>
                   </p>
                 </li>
               </ul>
@@ -303,34 +298,108 @@
           </ol>
         </details>
       </article>
-
+      <article class="sub-article">
+        <details open>
+          <summary class="head-summary">CSS custom scrollbar</summary>
+          To make the interface look more friendly, I have change the default scrollbar that has been used for years with some new stuff
+          <ol>
+            <li>
+              <ul class="no-list-icon">
+                <li>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            ::-webkit-scrollbar {
+                              width: 10px;
+                              height: 10px;
+                          }...
+                          </code>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                  <details open class="description">
+                    <summary><strong>Description: </strong></summary>
+                    I have use the <code>::-webkit-scrollbar</code> Pseudo-element to change the background of the scrollbar, <code>::-webkit-scrollbar-track</code> to change the space under the progress bar, and <code>::-webkit-scrollbar-thumb</code> to style the drag scrolling bar. 
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
+      <article class="sub-article">
+        <details open>
+          <summary class="head-summary">No Javascript Responsive Navigation bar</summary>
+          In the modern world, every website or application has to be Responsive and has to be prior to use normally on mobile devices, I had made a responsive Navigation bar by myself, first using some Javascript, but since assignment does not accept Javascript, I have to change. Thanksfully that I found the solution from a Youtube Video
+          <ol>
+            <li>
+              <ul class="no-list-icon">
+                <li>
+                  <details open>
+                    <summary><strong>Implemented code</strong></summary>
+                    <ul class="no-list-icon">
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            ::-webkit-scrollbar {
+                              width: 10px;
+                              height: 10px;
+                          }...
+                          </code>
+                        </a>
+                      </li>
+                      <li>
+                        <a target="_blank" class="code-link"
+                          href="https://github.com/minhnnguyen003/assign1/blob/04a76a4a659e875d386335f141e4cca233080b1e/styles/enhancement.css#L56-L64">
+                          <code>
+                            input type="checkbox" name="menu-btn" id="menu-btn"
+                            i class="fa-solid fa-bars"
+                          </code>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                  <details open class="description">
+                    <summary><strong>Description: </strong></summary>
+                    I have use the <code>::-webkit-scrollbar</code> Pseudo-element to change the background of the scrollbar, <code>::-webkit-scrollbar-track</code> to change the space under the progress bar, and <code>::-webkit-scrollbar-thumb</code> to style the drag scrolling bar. 
+                  </details>
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </details>
+      </article>
     </article>
   </main>
   <footer>
     <div class="footer-row">
       <div class="footer-col">
-        <a href="https://www.swinburne.edu.au/" target="_blank"><img src="images/swinburnelogo.png" width="200"
-            height="100" class="swinburne-logo" alt="Swinburne University"></a>
-        <div class="uni-contact">
-          <h4 id="swinburne">Connect with Swinburne</h4>
-          <a href="https://www.facebook.com/swinburneuniversityoftechnology" target="_blank"><i
-              class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://twitter.com/swinburne" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/school/swinburne-university-of-technology/" target="_blank"><i
-              class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/swinburne/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/user/swinburne" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <div class="contact-us">
+          <h4>Contact Us</h4>
+          <a href="https://github.com/minhnnguyen003/assign1" target="_blank"><i
+              class="fa-brands fa-github brand-icon"></i></a>
         </div>
 
       </div>
       <div class="footer-col">
         <h3>Members</h3>
         <ul class="footer-list">
-          <li class="footer-list-item">Daniel Cornelius Wong Yui Herng</li>
-          <li class="footer-list-item">Md Arefin Newaz Sojol</li>
-          <li class="footer-list-item">Ahmed Fuzail Mohamed Imran</li>
-          <li class="footer-list-item">Viet Dung Tran</li>
-          <li class="footer-list-item">Minh Nhat Nguyen</li>
+          <li class="footer-list-item"><a href="mailto:101224555@student.swin.edu.au" class="footer-list-anchor"
+              target="_blank">Daniel Cornelius Wong Yui Herng</a></li>
+          <li class="footer-list-item"><a href="mailto:103535741@student.swin.edu.au" class="footer-list-anchor"
+              target="_blank">Md Arefin Newaz Sojol</a></li>
+          <li class="footer-list-item"><a href="mailto:103831821@student.swin.edu.au" class="footer-list-anchor"
+              target="_blank">Ahmed Fuzail Mohamed Imran</a></li>
+          <li class="footer-list-item"><a href="mailto:103486496@student.swin.edu.au" class="footer-list-anchor"
+              target="_blank">Viet Dung Tran</a></li>
+          <li class="footer-list-item"><a href="mailto:103534696@student.swin.edu.au" class="footer-list-anchor"
+              target="_blank">Minh Nhat Nguyen</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -348,22 +417,13 @@
               target="_blank">103534696@student.swin.edu.au</a></li>
         </ul>
       </div>
-      <div class="footer-col">
-        <h3>Address</h3>
-        <ul class="footer-list">
-          <li class="footer-list-item">John Street</li>
-          <li class="footer-list-item">Hawthorn VIC 3122</li>
-          <li class="footer-list-item">Melbourne, Australia</li>
-        </ul>
-      </div>
     </div>
 
 
     <hr id="copyright-line">
     <div class="footer-bottom">
-      <p class="copyright">All Right reserved by &copy;Swinburne University</p>
-      <p class="copyright">Mark up by: <a class="link white" href="mailto:103534696@student.swin.edu.au">Minh Nhat
-          Nguyen</a></p>
+      <p class="copyright">Mark up by: <a href="mailto:103486496@student.swin.edu.au"
+          class="footer-list-anchor link white" target="_blank">Viet Dung Tran</a></p>
     </div>
   </footer>
 </body>

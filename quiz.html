@@ -17,18 +17,17 @@
       <ul class="nav-links" id="nav-list">
         <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
         <li><a href="./topic.html"><span class="icon"><i class="fa-solid fa-lightbulb"></i></span>Topic</a></li>
-        <li><a href="./quiz.html"><span class="icon"><i class="fa-solid fa-circle-question"></i></i></span>Quiz</a></li>
+        <li><a href="./quiz.html"><span class="icon"><i class="fa-solid fa-circle-question"></i></span>Quiz</a></li>
         <li><a href="./enhancement.html" class="active"><span class="icon"><i
                 class="fas fa-sliders-h"></i></span>Enhancement</a></li>
       </ul>
-      </div>
     </nav>
   </header>
   <div class="heading">
     <h1 id="head"> Quizz time!</h1>
     <h2 id="subheading"><i>Thank you for taking the time to fill the form</i></h2>
   </div>
-  <form>
+  <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
     <div id="question-part">
       <fieldset class="fieldset">
 
@@ -113,7 +112,7 @@
         <p>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</p><br>
         <div class="ques-option">
           <select>
-            <option id="default-val2" class="ans-opt">Select your answer</option>
+            <option id="default-val" class="ans-opt">Select your answer</option>
             <option value="Netflix" class="ans-opt">Netflix</option>
             <option value="HBO GO" class="ans-opt">HBO GO</option>
             <option value="Disney +" class="ans-opt">Disney +</option>
@@ -121,8 +120,8 @@
           </select>
         </div>
         <br>
-        <lp for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span
-            class="note">(Each points should be seperated by ",")</span></lp><br><br>
+        <label for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span
+            class="note">(Each points should be seperated by ",")</span></label><br><br>
         <input type="text" name="advantages" id="advantages" class="box" placeholder="Your answer will be here..."
           required>
         <br><br>
