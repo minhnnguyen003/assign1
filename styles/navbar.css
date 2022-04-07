@@ -50,10 +50,11 @@ header {
     font-size: 36px;
     color: white;
     cursor: pointer;
-    display: none !important;
+    display: none;
 }
 
 
+/* Responsive design for Navigation bar */
 @media screen and (max-width: 1024px) {
     header {
         position: fixed;
@@ -68,14 +69,19 @@ header {
     .nav-bar ul {
         display: none;
     }
-    .navbar-show {
-        display: block !important;
-        width: 90%;
-        z-index: 100000000;
-    }
     .fa-bars {
         padding: 20px;
         display: inline-block !important;
         border: 1px solid black;
     }
+}
+
+#menu-btn {
+    display: none;
+}
+
+#menu-btn:checked ~ ul {
+    display: block !important;
+    width: 90%;
+    z-index: 100000000;
 }

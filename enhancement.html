@@ -21,7 +21,8 @@
   <div class="background-image"></div>
   <header>
     <nav class="nav-bar">
-      <i class="fa-solid fa-bars" onclick="toggleNavbar()"></i>
+      <input type="checkbox" name="menu-btn" id="menu-btn">
+      <label for="menu-btn"><span><i class="fa-solid fa-bars"></i></span></label>
       <ul class="nav-links" id="nav-list">
         <li><a href="./index.html"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
         <li><a href="./topic.html"><span class="icon"><i class="fa-solid fa-lightbulb"></i></span>Topic</a></li>
@@ -39,7 +40,7 @@
       <h1 class="article-title">Enhancement</h1>
       <h4 id="subtitle">Please click on the code to see full code that is store in Github<sup>&#174;</sup></h4>
       <article class="sub-article">
-        <details>
+        <details open>
           <summary class="head-summary">CSS Flex</summary>
           We use flex in our pages in the following section:
           <ol class="bigger-list">
@@ -61,7 +62,7 @@
                     <!-- <p class="description"><strong>Description: </strong> We use Flex for the navigation bar to make it
                       easier to maintain and to make code clearer</p> -->
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     Firstly, I use <code>display: flex</code> to define the nav tag as a flex element. After that, to
                     set all the icon in the navigation bar to center, i just <code>Justify-content: center</code> to
@@ -86,7 +87,7 @@
                     </a>
 
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     Implement to arrange items as well as space distribution between items in quiz page. The flex box
                     was displayed in line 8 23 81 142 210. To use flex, I also add Justify-content. This property will
@@ -104,7 +105,7 @@
         </details>
       </article>
       <article class="sub-article">
-        <details>
+        <details open>
           <summary class="head-summary">CSS Grid</summary>
           We use grid in our Enhancement Page in the following section:
           <ol>
@@ -125,7 +126,7 @@
                                           </code>
                     </a>
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     I use Grid to divide the website into parts, with <code>"display:grid"</code> to define the big main
                     tag as a container. The <code>grid-template-columns</code> is used to define the columns and rows
@@ -141,7 +142,7 @@
         </details>
       </article>
       <article class="sub-article">
-        <details>
+        <details open>
           <summary class="head-summary">CSS @Keyframe and Animation</summary>
           We use Keyframe to define animation in our pages in enhancement and quiz pages, and animation property to make
           basic animation for enhancement page while loading:
@@ -173,7 +174,7 @@
                       </li>
                     </ul>
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     When the page is loaded, the elements will first be stay in Width that equal to 400% of the page
                     width, then it will move to the original place. We combine this with
@@ -212,7 +213,7 @@
                       </li>
                     </ul>
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     Firstly, I use the <code>::before</code> to make an element that display before the title, then I
                     use some basic styling with <code>height</code>, <code>width</code> and <code>margin</code> properties to
@@ -249,7 +250,7 @@
                       </li>
                     </ul>
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     The same thing happens to <code>::after</code>, and if we click on the Implement code block, it will
                     open the page to the source code in github with the selected code highlighted. Lets look at the gif
@@ -266,7 +267,7 @@
         </details>
       </article>
       <article class="sub-article">
-        <details>
+        <details open>
           <summary class="head-summary">CSS transition</summary>
           We use transition in the pseudo-element to make some smooth effect on enhancement to make the user feeling
           like they can interact
@@ -288,7 +289,7 @@
                       </li>
                     </ul>
                   </details>
-                  <details class="description" open>
+                  <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     As  I have mention on the pseudo-element, if we hover on the enhancement word, it will be highlight. And I use transition so it looks smoothly. <code>transition: ease-in-out .6s;</code> meaning that the transition will happen in 0.6 second and <code>ease-in-out</code> meaning that the transition effect will become slower at the start and the end.
                     <figure class="enhancement-figure">
@@ -366,10 +367,6 @@
     </div>
   </footer>
 </body>
-<script>
-  function toggleNavbar() {
-    navBar = document.getElementById('nav-list').classList.toggle('navbar-show')
-  }
-</script>
+
 
 </html>
