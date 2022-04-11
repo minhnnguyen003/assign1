@@ -40,10 +40,6 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 
 }
 
-#click-for-more {
-	text-decoration: none;
-}
-
 #more{
 	display: flex;
     justify-content: center;
@@ -57,7 +53,7 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
     transition: all 0.3s;
     margin: auto;
     color: black;
-    width: 40%;
+    width: 100%;
     cursor: pointer;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 	

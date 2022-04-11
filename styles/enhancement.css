@@ -5,11 +5,6 @@ created: 22/03/2022
 last modified: 27/03/2022
 description: CSS for enhancement.html, inside assignment Part 1 COS10026
 */
-
-.enhancement {
-    background-color: #cdcdcd;
-}
-
 .container {
     width: 100%;
     min-height: 400px;
@@ -29,7 +24,6 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     grid-row-end: 3;
     width: 100%;
     z-index: 1;
-    
     color: #eee;
 }
 
@@ -48,6 +42,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 .container article h1 {
     font-size: 36px;
 }
+
 /* Apply animation to all content in the page */
 .container article > * {
     animation: slidefromright 2s ease-in-out;
@@ -65,30 +60,17 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     animation: highlight 3s .5s ease-in-out;
 }
 
-.container article h1:hover::before {
-    width: 265px;
-}
+.container article h1:hover::before {width: 265px;}
 
 /* Defines Animations */
 @keyframes slidefromright {
-    0% {
-        transform: translateX(400%);
-    }
-    100% {
-        transform: translateX(0%);
-    }
+    0% {transform: translateX(400%);}
+    100% {transform: translateX(0%);}
 }
-
 @keyframes highlight {
-    0% {
-        width: 0px;
-    }
-    50% {
-        width: 520px;
-    }
-    100% {
-        width: 10px;
-    }
+    0% {width: 0px;}
+    50% {width: 520px;}
+    100% {width: 10px;}
 }
 
 .link {
@@ -98,7 +80,6 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 
 .code-link {
     text-decoration: none;
-    
 }
 
 .code-link::after {
@@ -140,18 +121,11 @@ details ol {
     list-style-type: none;
 }
 
-.ellipsis {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    word-wrap: wrap;
-    color: #61c121
-}
-
 #subtitle {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .main-article {
         width: 100%;
     }
@@ -164,10 +138,7 @@ details ol {
 @media screen and (max-width: 768px) {
     .main-article {
         width: 100%;
-        padding: 100px 0 0 10px
-    }
-    .sub-article, .head-summary, .no-list-icon > * {
-        font-size: 24px !important;
+        padding: 100px 0 0 10px;
     }
     #subtitle {
         font-size: 20px;
@@ -186,10 +157,4 @@ details ol {
     .enhancement-figure img {
         width: 100%;
     }
-}
-
-.enhancement-figure {
-    text-align: center;
-    font-size: 14px;
-    font-style: italic;
 }

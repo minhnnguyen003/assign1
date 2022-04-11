@@ -7,13 +7,11 @@ description: style.css, this file contain some basic style that apply for all el
 */
 
 @import url(./enhancement.css);
-@import url(./reference.css);
 @import url(./navbar.css);
 @import url(./quiz.css);
 @import url(./footer.css);
 @import url(./index.css);
 @import url(./topic.css);
-@import url(./scrollbar.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -25,5 +23,34 @@ description: style.css, this file contain some basic style that apply for all el
     box-sizing: border-box;
 }
 
+.reference .reference-link {
+	text-decoration: none;
+	font-style: italic;
+}
 
+.left-aligned {
+    text-align: left !important;
+}
 
+/*
+Custom Scrollbar
+author: Minh Nhat Nguyen
+*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff2f2;
+    border-radius: 70%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(156, 156, 156);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(31, 30, 30);
+}
