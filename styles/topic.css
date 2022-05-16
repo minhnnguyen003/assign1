@@ -1,61 +1,84 @@
 /*css for topic.html*/
-/*Author: Daniel Cornelius Wong Yui Herng*/
 
 /*css for topic.html*/
-#index-page {
-    background-color: #cdcdcd;
+#topic {
+    color: #FFFFFF;
+    margin-top: 75px;
+    width: 100%;
+    min-height: 400px;
+    justify-content: space-between;
 }
 
-.table{
-	text-align:center;
-	border-collapse:collapse;
-	border:1px solid black;
-
-}
-.table th{
-	background-color: #c0aed6; /*changes background color for table heading*/
-	border: 1px solid black;
-	padding: 10px;
+#topic h1 {
+    font-size: 2em;
+    padding-bottom: 30px;
 }
 
-.table td{
-	background-color: #dac7f0; /*changes background color for table data cells*/
-	border: 1px solid black;
+.sm-fig-right
+{
+    width: 100%;
 }
 
-.topic-article{
-	padding: 30px;
+.bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url(../images/topic.jpg);
+    
+    z-index: -1;
+    background-size: cover;
 }
 
-.topic-article h1{
-	font: bold 25px "Segoe UI", sans-serif; /*h1 element uses short-hand "font" property*/
-}
-.topic-article ol li{
-	margin-left: 25px;
+.sm-fig-right img {
+    width: 500px;
 }
 
-.topic-article ul li{
-	margin-left: 25px;
+.index-article, aside {
+    background-color: rgba(0,0,0,.6);
+}
+.index-article {
+    width: 100%;
+    margin: auto;
 }
 
-/*css for aside with coloured border and 30% width floating to the right*/
-aside{ 
-	border: 1px solid red; 
-	padding: 10px;
-	margin: 10px;
-	width: 30%;
-	float: right;
+#topic section {
+    margin: 0px 40px 40px 0px;
 }
 
-.reference .reference-link {
-	text-decoration: none;
-	font-style: italic;
+table {
+    margin: auto;
 }
 
-figure {
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th, td {
+    min-width: 200px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+#topic img {
+    width: 100%;
+}
+
+#topic ul, ol {
+    padding: 10px 0 20px 30px;
+}
+
+table ~ cite {
     text-align: center;
 }
 
-#index-page main {
-    margin: 100px 0 0 0;
+@media screen and (max-width: 1024px) {
+    .main-article {
+        width: 100% ;
+    }
+    .sm-fig-right img {
+        width: 75%;
+    }
 }

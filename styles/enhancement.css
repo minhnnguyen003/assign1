@@ -12,9 +12,18 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
     grid-template-columns: 10% 80% 10%;
     grid-template-rows: 70px auto;
     z-index: 1;
+    padding-bottom: 50px;
+}
+
+.background-image {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: url(../images/enhancment-bg.jpg) no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
 }
 
 .container article {
@@ -28,7 +37,7 @@ description: CSS for enhancement.html, inside assignment Part 1 COS10026
 }
 
 .main-article {
-    padding: 30px 50px 50px 50px;
+    padding: 30px 0 50px 50px;
     background-color: rgba(1,1,1, .7);
 }
 

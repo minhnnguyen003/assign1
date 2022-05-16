@@ -37,9 +37,10 @@ header {
     padding: 20px;
 }
 
-.nav-links li a:hover {
+.nav-links li:hover {
     transition: all .5s ease 0s;
     color: #a09c9c;
+    background-color: #4b4949;
 }
 
 .nav-bar .nav-links .icon {
