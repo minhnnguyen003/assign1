@@ -17,7 +17,7 @@
     <h1 id="head"> Quizz time!</h1>
     <h2 id="subheading"><i>Thank you for taking the time to fill the form</i></h2>
   </div>
-  <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+  <form method="post" action="marquiz.php" novalidate = "novalidate">
     <div id="question-part">
       <fieldset class="fieldset">
 
@@ -40,27 +40,27 @@
         <br>
         <p>Which is the main technology of <span class="streaming-media">streaming media</span>?</p><br>
         <div class="ques-option">
-          <select>
-            <option id="default-val1" class="answer">Select your answer</option>
-            <option value="Protocol" class="ans-opt">Protocol</option>
-            <option value="Bandwidth" class="ans-opt">Bandwidth</option>
-            <option value="Pandas" class="ans-opt">Pandas</option>
-            <option value="Blockchain" class="ans-opt">Blockchain</option>
+          <select name = "ques1">
+            <option id="default-val1" name = "ques1-default-opt" value = "" class="answer">Select your answer</option>
+            <option value="protocol" class="ques1-opt2">Protocol</option>
+            <option value="bandwidth" class="ques1-opt2">Bandwidth</option>
+            <option value="pandas" class="ques1-opt3">Pandas</option>
+            <option value="blockchain" class="ques1-opt4">Blockchain</option>
           </select>
         </div><br><br>
         <p>Which is the correct definition of <span class="streaming-media">streaming media</span>?</p><br>
         <div class="radio-ans">
-          <input type="radio" name="radio" class="answer" id="def-ans1" required>
-          <label for="def-ans1">Multimedia that is delivered and consumed content in a continuous manner from a
+          <input type="radio" name="ques2" value = "A" class="answer" id="def-ans1" required>
+          <label for="def-ans1">A. Multimedia that is delivered and consumed content in a continuous manner from a
             source.</label><br><br>
-          <input type="radio" name="radio" class="answer" id="def-ans2">
-          <label for="def-ans2">Multimedia that is an application where people can see printed books
+          <input type="radio" name="ques2" value = "B" class="answer" id="def-ans2" >
+          <label for="def-ans2">B. Multimedia that is an application where people can see printed books
             online.</label><br><br>
-          <input type="radio" name="radio" class="answer" id="def-ans3">
-          <label for="def-ans3">Multimedia that is an applications that does not require internet to deliver and
+          <input type="radio" name="ques2" value = "C" class="answer" id="def-ans3">
+          <label for="def-ans3">C. Multimedia that is an applications that does not require internet to deliver and
             consume.</label><br><br>
-          <input type="radio" name="radio" class="answer" id="def-ans4">
-          <label for="def-ans4">Multimedia supplies you a platform where you can share study materials.</label>
+          <input type="radio" name="ques2" value = "D" class="answer" id="def-ans4">
+          <label for="def-ans4">D. Multimedia supplies you a platform where you can share study materials.</label>
         </div><br><br>
 
 
@@ -77,81 +77,92 @@
           <img src="images/instagram.jpeg" width="150" height="150" alt="Instagram">
         </div>
         <div class="radio-ans">
-          <input type="radio" name="number_of_media" class="answer" id="ques2-ans1" required>
-          <label for="ques2-ans1">2</label><br><br>
-          <input type="radio" name="number_of_media" class="answer" id="ques2-ans2">
-          <label for="ques2-ans2">3</label><br><br>
-          <input type="radio" name="number_of_media" class="answer" id="ques2-ans3">
-          <label for="ques2-ans3">4</label><br><br>
-          <input type="radio" name="number_of_media" class="answer" id="ques2-ans4">
-          <label for="ques2-ans4">5</label>
+          <input type="radio" name="ques3" value = "A" class="answer" id="ques2-ans1" required>
+          <label for="ques2-ans1">A. 2</label><br><br>
+          <input type="radio" name="ques3" value = "B" class="answer" id="ques2-ans2">
+          <label for="ques2-ans2">B. 3</label><br><br>
+          <input type="radio" name="ques3" value = "C" class="answer" id="ques2-ans3">
+          <label for="ques2-ans3">C. 4</label><br><br>
+          <input type="radio" name="ques3" value = "D" class="answer" id="ques2-ans4">
+          <label for="ques2-ans4">D. 5</label>
         </div><br><br>
 
         <p>What does Bus Bandwidth technology refer to?</p><br>
         <div class="radio-ans">
-          <input type="radio" name="radio" class="answer" id="banwidth-ans1" required>
-          <label for="banwidth-ans1">It refers to unsupervised classification in machine learning.</label><br><br>
-          <input type="radio" name="radio" class="answer" id="bandwidth-ans2">
-          <label for="bandwidth-ans2">It refers to the number of bits that can be sent to the CPU
+          <input type="radio" name="ques4" value = "A" class="answer" id="banwidth-ans1" required>
+          <label for="banwidth-ans1">A. It refers to unsupervised classification in machine learning.</label><br><br>
+          <input type="radio" name="ques4" value = "B" class="answer" id="bandwidth-ans2">
+          <label for="bandwidth-ans2">B. It refers to the number of bits that can be sent to the CPU
             simultaneously.</label><br><br>
-          <input type="radio" name="radio" class="answer" id="bandwidth-ans3">
-          <label for="bandwidth-ans3">It refers to Internet protocol.</label><br><br>
-          <input type="radio" name="radio" class="answer" id="bandwidth-ans4">
-          <label for="bandwidth-ans4">None of them gives the correct answer.</label>
+          <input type="radio" name="ques4" value = "C" class="answer" id="bandwidth-ans3">
+          <label for="bandwidth-ans3">C. It refers to Internet protocol.</label><br><br>
+          <input type="radio" name="ques4" value = "D" class="answer" id="bandwidth-ans4">
+          <label for="bandwidth-ans4">D. None of them gives the correct answer.</label>
         </div><br><br>
         <p>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</p><br>
         <div class="ques-option">
-          <select>
+          <select name = "ques5">
             <option id="default-val" class="ans-opt">Select your answer</option>
-            <option value="Netflix" class="ans-opt">Netflix</option>
-            <option value="HBO GO" class="ans-opt">HBO GO</option>
-            <option value="Disney +" class="ans-opt">Disney +</option>
-            <option value="Tencent Video" class="ans-opt">Tencent Video</option>
+            <option value="netflix" class="ans-opt">Netflix</option>
+            <option value="hbo-go" class="ans-opt">HBO GO</option>
+            <option value="disney +" class="ans-opt">Disney +</option>
+            <option value="tencent-vid" class="ans-opt">Tencent Video</option>
           </select>
         </div>
         <br>
-        <label for="advantages">List three main advantages of <span class="streaming-media">streaming media</span>? <span
+        <label for="advantages">What is the advantage of <span class="streaming-media">streaming media</span>? <span
             class="note">(Each points should be seperated by ",")</span></label><br><br>
-        <input type="text" name="advantages" id="advantages" class="box" placeholder="Your answer will be here..."
+        <input type="text" name="ques6" id="advantages" class="box" placeholder="Your answer will be here..."
           required>
         <br><br>
         <p class="ques-checkbox">Which of these are the main advantages of <span class="streaming-media">streaming
             media</span> at the momment? <span class="note">(You can choose more than one answer)</span></p>
         <div class="ques-checkbox-ans">
-          <input type="checkbox" name="checkbox" class="answer"><label>You can always see latest movies and
+          <input type="checkbox" name="ques7" value = "A" class="answer"><label>A. You can always see latest movies and
             series.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Watching contents without
+          <input type="checkbox" name="ques7" value = "B" class="answer"><label>B. Watching contents without
             downloading.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Increasing the obesity rate in
+          <input type="checkbox" name="ques7" value = "C" class="answer"><label>C. Increasing the obesity rate in
             children.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>Prevent kids from following inappropriate
+          <input type="checkbox" name="ques7" value = "D" class="answer"><label>D. Prevent kids from following inappropriate
             contents.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>It can leads to social isolation.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>You can watch it wherever you
+          <input type="checkbox" name="ques7" value = "E" class="answer"><label>E. It can leads to social isolation.</label><br><br>
+          <input type="checkbox" name="ques7" value = "F" class="answer"><label>F. You can watch it wherever you
             want.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>The privacy could be decrease because online
+          <input type="checkbox" name="ques7" value = "G" class="answer"><label>G. The privacy could be decrease because online
             content is made available.</label><br><br>
-          <input type="checkbox" name="checkbox" class="answer"><label>The quality might be affected bycorrupted
+          <input type="checkbox" name="ques7" value = "H" class="answer"><label>H. The quality might be affected bycorrupted
             connection.</label><br><br>
         </div><br>
         <div class="ques-textarea">
           <p>Write a short paragraph about how <span class="streaming-media">streaming media</span> might grow in the
             future?</p><br>
-          <textarea placeholder="Enter your answer here..." required></textarea>
+          <textarea name ="ques8" placeholder="Enter your answer here..." required></textarea>
         </div><br>
         <p>What is the key role that make <span class="streaming-media">streaming media</span> company become success in
           the competition?</p><br>
         <div class="ques-option">
-          <select>
-            <option id="default-val2" class="answer">Select your answer</option>
-            <option value="Protocol" class="ans-opt">They applied modern technology</option>
-            <option value="Bandwidth" class="ans-opt">They offer exclusive content, self-produced and created
+          <select name = "ques9">
+            <option id="default-val2"  value = "" class="answer">Select your answer</option>
+            <option value="protocol"  class="ans-opt">They applied modern technology</option>
+            <option value="bandwidth" class="ans-opt">They offer exclusive content, self-produced and created
               specifically for the market</option>
-            <option value="Pandas" class="ans-opt">They try to make popular content that matched the global demands
+            <option value="pandas"  class="ans-opt">They try to make popular content that matched the global demands
             </option>
-            <option value="Blockchain" class="ans-opt">They reduce the time spending on advertisements</option>
+            <option value="blockchain"  class="ans-opt">They reduce the time spending on advertisements</option>
           </select>
         </div><br>
+        <p>What make <span class="streaming-media">streaming media</span> become prevalent at the momment?</p><br>
+        <div class="radio-ans">
+          <input type="radio" name="ques10" value = "A" class="answer" id="def2-ans1" required>
+          <label for="def2-ans1">A. Its convinience to update content.</label><br><br>
+          <input type="radio" name="ques10" value = "B" class="answer" id="def2-ans2">
+          <label for="def2-ans2">B. Its disadvantages into children.</label><br><br>
+          <input type="radio" name="ques10" value = "C" class="answer" id="def2-ans3">
+          <label for="def2-ans3">C. Users can watch up-to-date multiple TV show.</label><br><br>
+          <input type="radio" name="ques10" value = "D" class="answer" id="def2-ans4">
+          <label for="def2-ans4">D. The dominance of internet worldwide.</label>
+        </div><br><br>
       </fieldset>
       <div class="button">
         <input type="reset" name="reset" value="RESET" id="reset-button" class="btn">
