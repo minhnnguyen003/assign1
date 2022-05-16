@@ -7,16 +7,27 @@
     width: 100%;
     min-height: 400px;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
 #topic h1 {
     font-size: 2em;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .sm-fig-right
 {
     width: 100%;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0 0 20px 0;
+    margin: 10px 0;
+}
+
+#topic img {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
 }
 
 .bg {
@@ -25,8 +36,7 @@
     right: 0;
     left: 0;
     bottom: 0;
-    background: url(../images/topic.jpg);
-    
+    background: url(../images/10167453h.jpg) no-repeat;
     z-index: -1;
     background-size: cover;
 }
@@ -35,20 +45,23 @@
     width: 500px;
 }
 
-.index-article, aside {
-    background-color: rgba(0,0,0,.6);
-}
 .index-article {
     width: 100%;
     margin: auto;
 }
 
-#topic section {
-    margin: 0px 40px 40px 0px;
+.index-article .main-article {
+    width: 60%;
+    text-align: justify;
 }
 
+#topic section {
+    margin: 0px auto 0px;
+}
+
+
 table {
-    margin: auto;
+    margin: 30px auto;
 }
 
 table, th, td {
@@ -57,7 +70,7 @@ table, th, td {
 }
 
 th, td {
-    min-width: 200px;
+    min-width: 100px;
     padding-left: 10px;
     text-align: left;
 }
@@ -70,15 +83,79 @@ th, td {
     padding: 10px 0 20px 30px;
 }
 
-table ~ cite {
+cite {
+    display: block;
+    margin: 0 auto;
     text-align: center;
+    padding: 0 0 20px 0;
 }
 
+a {
+    word-wrap: break-word;
+}
+
+aside {
+    position: fixed;
+    right: 20px;
+    top: 35%;
+    height: 30%;
+    background-color: rgb(0, 0, 0);
+    font-size: 16px;
+    height: 50px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px 10px 0 0;
+}
+
+aside p {
+    display: block;
+    padding: 20px 0 20px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+aside > :last-child {
+    border: 1px solid #000000;
+    border-radius: 0 0 10px 10px;
+}
+
+aside a {
+    font-size: 36px;
+    padding: 20px;
+    display: block;
+    background-color: rgb(0, 0, 0);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: #978888;
+}
+
+.reference-ol {
+    padding: 5px 0 0px 20px;
+    font-size: 12px;
+}
+
+.reference-link {
+    color: #5e8163;
+}
+
+.reference-link:hover {
+    color: #26cb41;
+    transition: .3s ease-in;
+}
+
+
 @media screen and (max-width: 1024px) {
-    .main-article {
-        width: 100% ;
+    .index-article .main-article {
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px 30px 0 30px;
     }
-    .sm-fig-right img {
-        width: 75%;
+
+    aside {
+        display: none;
     }
 }
