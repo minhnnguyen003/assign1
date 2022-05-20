@@ -17,7 +17,7 @@
     <h1 id="head"> Quizz time!</h1>
     <h2 id="subheading"><i>Thank you for taking the time to fill the form</i></h2>
   </div>
-  <form method="post" action="marquiz.php" novalidate = "novalidate">
+  <form method="post" action="markquiz.php" novalidate = "novalidate">
     <div id="question-part">
       <fieldset class="fieldset">
 
@@ -41,7 +41,7 @@
         <p>Which is the main technology of <span class="streaming-media">streaming media</span>?</p><br>
         <div class="ques-option">
           <select name = "ques1">
-            <option id="default-val1" name = "ques1-default-opt" value = "" class="answer">Select your answer</option>
+            <option id="default-val1" value = "" class="answer">Select your answer</option>
             <option value="protocol" class="ques1-opt2">Protocol</option>
             <option value="bandwidth" class="ques1-opt2">Bandwidth</option>
             <option value="pandas" class="ques1-opt3">Pandas</option>
@@ -66,7 +66,7 @@
 
 
 
-        <p>How many <span class="streaming-media">streaming media</span> platforms are there is those picture below</p>
+        <p>How many <span class="streaming-media">streaming media</span> platforms are there is those pictures below?</p>
         <div id="logo">
           <img src="images/twitch.jpeg" width="150" height="150" alt="Twitch">
           <img src="images/facebook.png" width="150" height="150" alt="Facebook">
@@ -102,41 +102,39 @@
         <p>Which is the most prevalent <span class="streaming-media">streaming media</span> at the momment?</p><br>
         <div class="ques-option">
           <select name = "ques5">
-            <option id="default-val" class="ans-opt">Select your answer</option>
+            <option id="default-val" value = "" class="ans-opt">Select your answer</option>
             <option value="netflix" class="ans-opt">Netflix</option>
             <option value="hbo-go" class="ans-opt">HBO GO</option>
-            <option value="disney +" class="ans-opt">Disney +</option>
+            <option value="disney+" class="ans-opt">Disney +</option>
             <option value="tencent-vid" class="ans-opt">Tencent Video</option>
           </select>
         </div>
         <br>
-        <label for="advantages">What is the advantage of <span class="streaming-media">streaming media</span>? <span
-            class="note">(Each points should be seperated by ",")</span></label><br><br>
+        <label for="advantages">How many members do Disney+ have in 2022?</label><br><br>
         <input type="text" name="ques6" id="advantages" class="box" placeholder="Your answer will be here..."
           required>
         <br><br>
-        <p class="ques-checkbox">Which of these are the main advantages of <span class="streaming-media">streaming
-            media</span> at the momment? <span class="note">(You can choose more than one answer)</span></p>
+        <p class="ques-checkbox">Which of these are the advantages of <span class="streaming-media">streaming
+            media</span> at the momment?(Choose 3, one wrong answer or not enough number of questions will be 0 point) 
+            <span class="note">(You can choose more than one answer)</span></p>
         <div class="ques-checkbox-ans">
-          <input type="checkbox" name="ques7" value = "A" class="answer"><label>A. You can always see latest movies and
+          <input type="checkbox" name="ques7[]" value = "A" class="answer"><label>A. You can always see latest movies and
             series.</label><br><br>
-          <input type="checkbox" name="ques7" value = "B" class="answer"><label>B. Watching contents without
-            downloading.</label><br><br>
-          <input type="checkbox" name="ques7" value = "C" class="answer"><label>C. Increasing the obesity rate in
+          <input type="checkbox" name="ques7[]" value = "B" class="answer"><label>B. Instant playback everytime.</label><br><br>
+          <input type="checkbox" name="ques7[]" value = "C" class="answer"><label>C. Increasing the obesity rate in
             children.</label><br><br>
-          <input type="checkbox" name="ques7" value = "D" class="answer"><label>D. Prevent kids from following inappropriate
+          <input type="checkbox" name="ques7[]" value = "D" class="answer"><label>D. Prevent kids from following inappropriate
             contents.</label><br><br>
-          <input type="checkbox" name="ques7" value = "E" class="answer"><label>E. It can leads to social isolation.</label><br><br>
-          <input type="checkbox" name="ques7" value = "F" class="answer"><label>F. You can watch it wherever you
+          <input type="checkbox" name="ques7[]" value = "E" class="answer"><label>E. It can leads to social isolation.</label><br><br>
+          <input type="checkbox" name="ques7[]" value = "F" class="answer"><label>F. You can watch it wherever you
             want.</label><br><br>
-          <input type="checkbox" name="ques7" value = "G" class="answer"><label>G. The privacy could be decrease because online
+          <input type="checkbox" name="ques7[]" value = "G" class="answer"><label>G. The privacy could be decrease because online
             content is made available.</label><br><br>
-          <input type="checkbox" name="ques7" value = "H" class="answer"><label>H. The quality might be affected bycorrupted
+          <input type="checkbox" name="ques7[]" value = "H" class="answer"><label>H. The quality might be affected by corrupted
             connection.</label><br><br>
         </div><br>
         <div class="ques-textarea">
-          <p>Write a short paragraph about how <span class="streaming-media">streaming media</span> might grow in the
-            future?</p><br>
+          <p>Will <span class="streaming-media">streaming media</span> grow in the future?(yes/no)</p><br>
           <textarea name ="ques8" placeholder="Enter your answer here..." required></textarea>
         </div><br>
         <p>What is the key role that make <span class="streaming-media">streaming media</span> company become success in
@@ -144,12 +142,12 @@
         <div class="ques-option">
           <select name = "ques9">
             <option id="default-val2"  value = "" class="answer">Select your answer</option>
-            <option value="protocol"  class="ans-opt">They applied modern technology</option>
-            <option value="bandwidth" class="ans-opt">They offer exclusive content, self-produced and created
+            <option value="technology"  class="ans-opt">They applied modern technology</option>
+            <option value="content" class="ans-opt">They offer exclusive content, self-produced and created
               specifically for the market</option>
-            <option value="pandas"  class="ans-opt">They try to make popular content that matched the global demands
+            <option value="popular"  class="ans-opt">They try to make popular content that matched the global demands
             </option>
-            <option value="blockchain"  class="ans-opt">They reduce the time spending on advertisements</option>
+            <option value="advertisements"  class="ans-opt">They reduce the time spending on advertisements</option>
           </select>
         </div><br>
         <p>What make <span class="streaming-media">streaming media</span> become prevalent at the momment?</p><br>
