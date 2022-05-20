@@ -38,7 +38,7 @@ header {
 }
 
 .nav-links li:hover {
-    transition: all .5s ease 0s;
+    transition: all .7s ease-in;
     color: #a09c9c;
     background-color: #4b4949;
 }
