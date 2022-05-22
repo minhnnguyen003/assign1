@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Homepage for the topic Streaming Media" />
   <meta name="keywords" content="MySQL,PHP" />
+  <link rel="stylesheet" href="./styles/markquiz.css">
   <title>Quiz</title>
 </head>
 <body id="index">
@@ -15,6 +16,7 @@
     <h2 id="subheading"><i>Your result will be displayed behind!</i></h2>
   </div>
   <div class = "marking">
+    <div class="message">
   <?php
     require_once("settings.php");
     function sanitise_input($data){
@@ -146,6 +148,30 @@
       return $score;
     }
 
+    function get_inaccurate($conn,$table,$ans){
+      $query = "select * from $table";
+      $res =  mysqli_query($conn,$query);
+      $check = [];
+      while($rows = mysqli_fetch_assoc($res)){
+        $ques = $rows['question'];
+        if ($ans[$ques] == $rows['answer']){
+          $check[$rows['ques_id']] = "True";
+        }else{
+          $check[$rows['ques_id']] = "False";
+        }
+        if($ques == 'ques7'){
+          $temp = join(",",$ans[$ques]);
+          if($temp == $rows['answer']){
+            $check[$rows['ques_id']] = "True";
+          }else{
+            $check[$rows['ques_id']] = "False";
+          }
+        }
+      }
+      mysqli_free_result($res);
+      return $check;
+    }
+
     if ((isset($_POST["fname"])) && (isset($_POST['lname'])) && (isset($_POST['age'])) && (isset($_POST['id']) &&
       $_POST["fname"] != "" && $_POST["lname"] !="" && $_POST["age"] && $_POST["id"])){
       $fname = $_POST["fname"];
@@ -238,7 +264,7 @@
 
     if ($errMsg != ""){
       echo $errMsg;
-      echo "<p>Click <a href =\"quiz.php\">here</a> to return.</p>";
+      echo "<p>Click <a class =\"anchor\" href =\"quiz.php\">here</a> to return.</p>";
     }else{
       $conn = @mysqli_connect($host,$user,$pwd,$sql_db);
       if (!$conn){
@@ -263,8 +289,29 @@
           if ($isAnsLegal == false){
             if (insert_first_student($conn,$student_table,$student_id,$fname,$lname,$age,$score)){
               if (insert_first_attempt($conn,$attempt_table,$student_id,$score) && update_first_student($conn,$student_table,$attempt_table,$student_id)){
-                echo "<p>Unfortunately! You've not done all the questions</p>";
-                echo "<p>You got $score in your first attempt.</p>";
+                // echo "<div class = \"message\">";
+                echo "<div class =\"message1\">";
+                echo "<p id =\"attempt\">Your Result!</>";
+                echo "</div>";
+                echo "<div class = \"score\">";
+                  echo "<div class = \"outer\">";
+                    echo "<div class =\"inner\">";
+                      echo "<p id =\"score\">$score</p>";
+                      echo "<p id = \"out-of\">Out of 10</p>";
+                    echo "</div>";
+                  echo "</div>";
+                echo "</div>";
+                echo "<h4>Personal details</h4>";
+                echo "<div class = \"info\"> ";
+                echo "<p>Your name: $fname $lname</p>";
+                echo "<p>Student ID: $student_id</p>";
+                echo "<p>Attempt limits: 1</p>";
+                echo "<p>You've done your first attempt!</p>";
+                echo "<p>You got $score for not having done all the question!!!</p>";
+                echo "<p>Click <a class =\"anchor\" href = \"quiz.php\">here</a> to re-do the quiz</p>";
+                echo "<p> Click<a class =\"anchor\" href =\"reason.php\"> here</a> for more infomation</p>";
+                echo "</div>";
+                // echo "</div>";
               }
             }else{
               die("<p>Database error!</p>");
@@ -273,7 +320,50 @@
             $score = get_mark($conn,$question,$ans);
             if (insert_first_student($conn,$student_table,$student_id,$fname,$lname,$age,$score)){
               if (insert_first_attempt($conn,$attempt_table,$student_id,$score) && update_first_student($conn,$student_table,$attempt_table,$student_id)){
-                echo "<p>Congratulations! You got $score marks on your first attempt.</p>";
+                // echo "<div class = \"message\">";
+                echo "<div class =\"message1\">";
+                echo "<p id =\"attempt\">Your Result!</>";
+                echo "</div>";
+                echo "<div class = \"score\">";
+                  echo "<div class = \"outer\">";
+                    echo "<div class =\"inner\">";
+                      echo "<p id =\"score\">$score</p>";
+                      echo "<p id = \"out-of\">Out of 10</p>";
+                    echo "</div>";
+                  echo "</div>";
+                echo "</div>";
+                echo "<h4>Personal details</h4>";
+                echo "<div class = \"info\"> ";
+                echo "<p>Your name: $fname $lname</p>";
+                echo "<p>Student ID: $student_id</p>";
+                echo "<p>Attempt limits: 1</p>";
+                echo "<p>You've done your first attempt!</p>";
+                $check = get_inaccurate($conn,$question,$ans);
+                $query = "select * from question";
+                $res = mysqli_query($conn,$query);
+                if(!$res){
+                  echo "<p>Unable to display your answers!!!</p>";
+                }else{
+                  echo "<table id =\"check\">";
+                  echo "<tr>
+                          <th>No.</th>
+                          <th>Type</th>
+                          <th>Check</th>
+                        </tr>";
+                  while($rows = mysqli_fetch_assoc($res)){
+                    echo "<tr>";
+                      echo  "<td>",$rows['ques_id'],"</td>";
+                      echo  "<td>",$rows['type'],"</td>";
+                      echo  "<td>",$check[$rows['ques_id']],"</td>";
+                    echo "</tr>";
+                  }
+                  echo "</table>";
+                }
+                mysqli_free_result($res);
+                echo "<p>Click <a class =\"anchor\" href = \"quiz.php\">here</a> to re-do the quiz</p>";
+                echo "<p> Click<a class =\"anchor\" href =\"reason.php\"> here</a> for more infomation</p>";
+                echo "</div>";
+                // echo "</div>";
               }
             }else{
               die("<p>Database error!</p>");
@@ -283,8 +373,29 @@
           if ($isAnsLegal == false){
             if (insert_second_attempt($conn,$attempt_table,$student_id,$score)){
               if (update_second_attempt($conn,$student_table,$attempt_table,$student_id,$score)){
-                echo "<p>You got $score marks in your final attempt.";
-                echo "<p>This is your last attempt</p>";
+                // echo "<div class = \"message\">";
+                echo "<div class =\"message1\">";
+                echo "<p id =\"attempt\">Your Result!</>";
+                echo "</div>";
+                echo "<div class = \"score\">";
+                  echo "<div class = \"outer\">";
+                    echo "<div class =\"inner\">";
+                      echo "<p id =\"score\">$score</p>";
+                      echo "<p id = \"out-of\">Out of 10</p>";
+                    echo "</div>";
+                  echo "</div>";
+                echo "</div>";
+                echo "<h4>Personal details</h4>";
+                echo "<div class = \"info\"> ";
+                echo "<p>Your name: $fname $lname</p>";
+                echo "<p>Student ID: $student_id</p>";
+                echo "<p>Attempt limits: 1</p>";
+                echo "<p>You've done your first attempt!</p>";
+                echo "<p>You got $score for not having done all the question!!!</p>";
+                echo "<p>Click <a class =\"anchor\" href = \"quiz.php\">here</a> to re-do the quiz</p>";
+                echo "<p> Click<a class =\"anchor\" href =\"reason.php\"> here</a> for more infomation</p>";
+                echo "</div>";
+                // echo "</div>";
               }else{
                 die("<p>Unexpected error</p>");
               }
@@ -295,8 +406,50 @@
             $score = get_mark($conn,$question,$ans);
             if (insert_second_attempt($conn,$attempt_table,$student_id,$score)){
               if (update_second_attempt($conn,$student_table,$attempt_table,$student_id,$score)){
-                echo "<p>This is your last attempt</p>";
-                echo "<p>Congratulations! You got $score marks in your last attempt.</p>";
+                // echo "<div class = \"message\">";
+                echo "<div class =\"message1\">";
+                echo "<p id =\"attempt\">Your Result!</>";
+                echo "</div>";
+                echo "<div class = \"score\">";
+                  echo "<div class = \"outer\">";
+                    echo "<div class =\"inner\">";
+                      echo "<p id =\"score\">$score</p>";
+                      echo "<p id = \"out-of\">Out of 10</p>";
+                    echo "</div>";
+                  echo "</div>";
+                echo "</div>";
+                echo "<h4>Personal details</h4>";
+                echo "<div class = \"info\"> ";
+                echo "<p>Your name: $fname $lname</p>";
+                echo "<p>Student ID: $student_id</p>";
+                echo "<p>Attempt limits: 1</p>";
+                echo "<p>You've done your first attempt!</p>";
+                $check = get_inaccurate($conn,$question,$ans);
+                $query = "select * from question";
+                $res = mysqli_query($conn,$query);
+                if(!$res){
+                  echo "<p>Unable to display your answers!!!</p>";
+                }else{
+                  echo "<table id =\"check\">";
+                  echo "<tr>
+                          <th>No.</th>
+                          <th>Type</th>
+                          <th>Check</th>
+                        </tr>";
+                  while($rows = mysqli_fetch_assoc($res)){
+                    echo "<tr>";
+                      echo  "<td>",$rows['ques_id'],"</td>";
+                      echo  "<td>",$rows['type'],"</td>";
+                      echo  "<td>",$check[$rows['ques_id']],"</td>";
+                    echo "</tr>";
+                  }
+                  echo "</table>";
+                }
+                mysqli_free_result($res);
+                echo "<p>Click <a class =\"anchor\" href = \"quiz.php\">here</a> to re-do the quiz</p>";
+                echo "<p> Click<a class =\"anchor\" href =\"reason.php\"> here</a> for more infomation</p>";
+                echo "</div>";
+                // echo "</div>";
               }else{
                 die("<p>Unexpected error</p>");
               }
@@ -305,13 +458,14 @@
             }
           }
         }else{
-          echo "<p id =\"over_msg\">You reached attempt limit!!!</p>";
+          echo "<p class =\"anchor\" id =\"over-msg\">You reached attempt limit!!!</p>";
         }
       }
 
     }
 
   ?>
+  </div>
   </div>
 </body>
 
