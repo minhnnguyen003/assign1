@@ -76,7 +76,10 @@
                 http_response_code(500);
             }
         }
-        else header("location: ./login.php");
+        else {
+            
+            header("location: ./login.php");
+        }
 
 
 

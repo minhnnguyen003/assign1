@@ -17,10 +17,14 @@
         <main class="login-container">
             <h1>Login</h1>
             <form action="./authentication.php" method="POST" class="login-form">
-                <label for="student_id">Student ID</label>
-                <input type="text" name="student_id">
-                <label for="student_id">Password</label>
-                <input type="password" name="student_id">
+                <div class="box">
+                    <label for="student_id">Student ID</label>
+                    <input type="text" name="student_id" class="text-box">
+                </div>
+                <div class="box">
+                    <label for="student_id">Password</label>
+                    <input type="password" name="student_id" class="text-box">
+                </div>
                 <input id="login-btn" type="submit" value="Login">
             </form>
             <p class="copyright">Mark up by: <a href="mailto:103831821@student.swin.edu.au"
