@@ -17,14 +17,8 @@ header {
     display: flex;
     overflow: visible;
     background-color: #0e0d0d;
-    justify-content: flex-end;
-    padding: 0 0 0 160px;
+    justify-content: center;
     align-items: center;
-}
-
-.nav-bar ul{
-    margin: auto;
-    padding: 0;
 }
 
 .nav-links li a, .manage-button
@@ -40,7 +34,7 @@ header {
 .nav-links li
 {
     display: inline-block;
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
 }
 
 .nav-links li:hover {
@@ -69,24 +63,18 @@ header {
     }
     .nav-bar {
         display: block;
-        padding: 0;
     }
     .nav-bar li {
         display: block;
-        padding: 30px 30px 30px 0;
     }
 
     .nav-bar ul {
         display: none;
-        padding: 0;
     }
     .fa-bars {
         padding: 20px;
         display: inline-block !important;
         border-right: 5px solid black;
-    }
-    .manage-button{
-        display: none;
     }
 }
 
@@ -102,12 +90,11 @@ header {
 }
 
 .manage-button {
+    display: absolute;
     background-color: #13a2d6;
-    min-width: 110px;
     border-radius: 15px;
     border: 1px solid #13a2d6;
     padding: 6px 10px;
     right: 20px;
     top: 0;
-    margin-right: 30px;
 }

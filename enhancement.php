@@ -8,8 +8,8 @@
   <meta name="description" content="Enhancement for Assignment Part 1, COS10026">
   <meta name="keywords" content="Enhancement">
   <meta name="author" content="Minh Nhat Nguyen">
-  <title>Enhancement</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <title>Enhancement</title>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -373,6 +373,11 @@
   <?php
     require('./footer.inc')
   ?>
+  <hr id="copyright-line">
+    <div class="footer-bottom">
+      <p class="copyright">Mark up by: <a href="mailto:103831821@student.swin.edu.au"
+          class="footer-list-anchor white link" target="_blank">Minh Nhat Nguyen</a></p>
+    </div>
 </body>
 
 

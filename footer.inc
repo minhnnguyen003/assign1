@@ -39,11 +39,4 @@
         </ul>
       </div>
     </div>
-
-
-    <hr id="copyright-line">
-    <div class="footer-bottom">
-      <p class="copyright">Mark up by: <a href="mailto:103831821@student.swin.edu.au"
-          class="footer-list-anchor white link" target="_blank">Ahmed Fuzail Mohamed Imran</a></p>
-    </div>
   </footer>

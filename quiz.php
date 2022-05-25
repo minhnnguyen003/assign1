@@ -162,6 +162,7 @@
   <?php
     require('./footer.inc')
   ?>
+  
 </body>
 
 

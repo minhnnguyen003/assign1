@@ -1,0 +1,91 @@
+/*
+filename: enhancement.css
+author: Minh Nhat Nguyen
+created: 22/03/2022
+last modified: 27/03/2022
+description: CSS for enhancement.html, inside assignment Part 1 COS10026
+*/
+.container {
+    width: 100%;
+    min-height: 400px;
+}
+
+#login-page .background-image {
+    z-index: -1;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url(../images/loginbg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.login-container {
+    z-index: -1;
+    width: 500px;
+    height: 450px;
+    color: #eee;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.login-container > h1 {
+    text-align: center;
+}
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0);
+    margin: auto;
+    padding: 20px 0;
+    width: 400px;
+}
+
+.login-form input {
+    padding: 0 0 0 10px;
+    margin: 15px 0;
+    width: 100%;
+    font-size: 30px;
+    border: 1px solid #cdcdcd;
+    border-radius: 8px;
+    transition: all .7s ease-in-out;
+}
+
+.login-form input:focus {
+    outline: none;
+    border: 1px solid #cdcdcda4;
+}
+
+#login-btn {
+    height: 40px;
+    background-color: #cc2c2c;
+    border: 1px solid #cc2c2c;
+}
+
+.login-form label {
+    font-size: 20px;
+}
+
+
+.login-form {
+    display: block;
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .login-container {
+        width: 100%;
+    }
+    .login-form {
+        display: block;
+        min-height: 0px;
+        width: 100%;
+    }
+}
