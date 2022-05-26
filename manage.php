@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Management Admin</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/manage.css">
     <meta name="author" content="Minh Nhat Nguyen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
@@ -14,10 +14,32 @@
     <?php
     require('./admin_navbar.inc');
     ?> 
-    
+    <nav class="left-pane">
+        <form class="search-pane" method="get" action="./login.php">
+            <input type="text" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
+        <div class="menu-button">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            <span>Dashboard</span>
+        </div>
+        <div class="menu-button">
+            <i class="fa-solid fa-filter"></i>
+            <span>Filter</span>
+        </div>
+        <div class="menu-button">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Chart</span>
+        </div>
+    </nav>
+    <div class="background-image"></div>
+    <main class="main">
+    <table class="big-table">
+        <tr class="head-row">
     <?php
         require('./settings.php');
-
+        $hasValidCredentials = 1;
         if($hasValidCredentials)
         {
             $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
@@ -37,7 +59,7 @@
                     echo"<p>Error with student queries</p>";
                 }
                 else {
-                    $student_row = mysqli_fetch_assoc($attempt_query);
+                    $student_row = mysqli_fetch_assoc($student_result);
                     while($student_row)
                     {
                         $student = array();
@@ -47,27 +69,40 @@
                         $student["idAttempt1"] = $student_row["id_attempt1"];
                         $student["idAttempt2"] = $student_row["id_attempt2"];
                         $student["firstScore"] = $student_row["first_score"];
-                        $student["lastName"] = $student_row["last_score"];
+                        $student["lastScore"] = $student_row["last_score"];
                         $student_array[$student_row["student_id"]] = $student;
-                        $student_row = mysqli_fetch_assoc($attempt_query);
+                        $student_row = mysqli_fetch_assoc($student_result);
                     }
-
                 }
 
                 if($attempt_result)
                 {
-                    if(!mysqli_fetch_assoc($attempt_query))
+                    $attempt_row = mysqli_fetch_assoc($attempt_result);
+                    if($attempt_row)
                     {
-                        echo "<p>No</p>";
+                        echo "<th class=\"head\">ID</th>\n<th class=\"head\">Student ID</th>\n<th class=\"head\">First Name</th>\n<th class=\"head\">Last Name</th>\n<th class=\"head\">Score</th>\n<th class=\"head\">Date Taken</th>\n";
+                        echo"</tr>\n";
+                        while($attempt_row)
+                        {
+                            echo"<tr class=\"row\">\n";
+                            echo"<td class=\"data\">", $attempt_row["attempt_id"], "</td>\n";
+                            echo"<td class=\"id\">", $attempt_row["student_id"], "</td>\n";
+                            echo"<td class=\"name\">", ucfirst($student_array[$attempt_row["student_id"]]["firstName"]), "</td>\n";
+                            echo"<td class=\"name\">", ucfirst($student_array[$attempt_row["student_id"]]["lastName"]), "</td>\n";
+                            echo"<td class=\"data\">", $attempt_row["score"], "</td>\n";
+                            echo"<td class=\"date\">", $attempt_row["date_joined"], "</td>\n";
+                            
+                            echo"</tr>\n";
+
+                            $attempt_row = mysqli_fetch_assoc($attempt_result);
+                        }
                     }
                     else {
-                        echo "<table class=\"big-table\">\n<tr class=\"row\">\n";
-                        echo "<th class=\"head\">Attempt ID</th>\n<th class=\"head\">Date Taken</th>\n<th class=\"head\">Student ID</th>\n<th class=\"head\">Score</th>\n<th class=\"head\">First Name</th>\n<th class=\"head\">Last Name</th>\n";
-                        echo"</tr>\n";
+                        echo "<p>No</p>";
                     }
                 }
                 else {
-                    echo "<p>Something is wrong with $attempt_result</p>";
+                    echo "<p>Something is wrong with $attempt_query</p>";
                 }
             }
             else
@@ -76,32 +111,25 @@
                 http_response_code(500);
             }
         }
-        else {
-            
-            header("location: ./login.php");
-        }
+        // else {
+        //     header("location: ./login.php");
+        // }
 
 
 
     ?>
+    </table>
+    </main>
+    
 
-    <table class="big-table">
+    <!-- <table class="big-table">
             <th class="head"></th>
             <th class="head"></th>
         </tr>
         <tr class="row">
         </tr>
-    </table>
+    </table> -->
 
-    <?php
-    require('./footer.inc');
-    ?>
-
-    <hr id="copyright-line">
-    <div class="footer-bottom">
-      <p class="copyright">Mark up by: <a href="mailto:103831821@student.swin.edu.au"
-          class="footer-list-anchor white link" target="_blank">Minh Nhat Nguyen</a></p>
-    </div>
 </body>
 </html>
 

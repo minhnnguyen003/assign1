@@ -1,0 +1,193 @@
+@import url(./admin_left_pane.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.background-image {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#4C9099, #5D3885);
+    background-size: cover;
+}
+
+.main {
+    padding: 75px 75px;
+}
+
+/* Table CSS */
+
+.id {
+    width: 150px;
+}
+
+.big-table {
+    float: right;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+}
+
+.big-table .date, .big-table .name {
+    width: 180px;
+}
+
+.big-table th, td {
+    border: none;
+    text-align: left;
+}
+
+.big-table .head-row {
+    background-color: #55608E;
+    border: 1px solid #55608E;
+}
+
+.big-table th {
+    min-width: 60px;
+    padding: 10px 0 10px 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.big-table td {
+    background-color: #7591A9;
+    padding: 5px 0 5px 10px;
+    border: 1px #7591A9;
+    color: #fff;
+}
+
+/* Navbar CSS */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    height: 61px;
+}
+
+.nav-bar
+{
+    display: flex;
+    overflow: visible;
+    background-color: #0e0d0d;
+    justify-content: flex-end;
+    padding: 0 0 0 160px;
+    align-items: center;
+}
+
+.nav-bar ul{
+    margin-right: 0;
+    padding: 0;
+}
+
+.nav-links li a, .manage-button
+{
+    list-style-type: none;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Montserrat','Segoe UI', sans-serif;
+    font-weight: 500;
+}
+
+.nav-links li
+{
+    display: inline-block;
+    padding: 20px 20px 20px 20px;
+}
+
+.nav-links li:hover, .manage-button:hover {
+    transition: all .7s ease-in;
+    color: #a09c9c;
+    background-color: #4b4949;
+}
+
+.nav-bar .nav-links .icon, .manage-button .icon {
+    padding-right: 5px;
+}
+
+.fa-bars {
+    font-size: 36px;
+    color: white;
+    cursor: pointer;
+    display: none !important;
+}
+
+
+/* Responsive design for Navigation bar */
+@media screen and (max-width: 1024px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+    .nav-bar {
+        display: block;
+        padding: 0;
+    }
+    .nav-bar li {
+        display: block;
+        padding: 30px 30px 30px 0;
+    }
+
+    .nav-bar ul {
+        display: none;
+        padding: 0;
+    }
+    .fa-bars {
+        padding: 20px;
+        display: inline-block !important;
+        border-right: 5px solid black;
+    }
+    .manage-button{
+        display: none;
+    }
+}
+
+
+#menu-btn {
+    display: none;
+}
+/* ~ means the select nearest siblings so  #menu-btn:checked ~ ul means select sibling ul tag*/
+#menu-btn:checked ~ ul {
+    display: block !important;
+    width: 90%;
+    z-index: 100000000;
+}
+
+.manage-button {
+    width: 110px;
+    margin-right: 30px;
+    padding: 20px;
+    right: 20px;
+}
+
+/*
+Custom Scrollbar
+author: Minh Nhat Nguyen
+*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff2f2;
+    border-radius: 70%;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(156, 156, 156);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(31, 30, 30);
+}
