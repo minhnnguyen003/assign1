@@ -12,7 +12,8 @@
 </head>
 <body>
     <?php
-    require('./admin_navbar.inc');
+        require('./admin_navbar.inc');
+        require('./left_pane.inc');
     ?> 
     <nav class="left-pane">
         <form class="search-pane" method="get" action="./login.php">

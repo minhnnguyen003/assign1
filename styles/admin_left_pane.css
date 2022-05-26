@@ -1,3 +1,10 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
 .left-pane {
     width: 300px;
     position: fixed;
@@ -44,10 +51,6 @@
     transition: all .7s;
 }
 
-/* .left-pane hr {
-    margin: 510px 0 0 0;
-} */
-
 .left-pane .menu-button:hover {
     background-color: #cd9f9f;
 }
@@ -55,8 +58,3 @@
 .left-pane .menu-button i {
     padding: 0 20px;
 }
-
-/* .menu-button #logout-btn {
-    position: absolute;
-    bottom: 74px;
-} */
