@@ -8,9 +8,13 @@
   <meta name="description" content="The Homepage for the topic Streaming Media" />
   <meta name="keywords" content="MySQL,PHP" />
   <link rel="stylesheet" href="./styles/markquiz.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Quiz</title>
 </head>
 <body id="index">
+  <?php
+    require("./navbar.inc")
+  ?>
   <div class="heading">
     <h1 id="head"> Result</h1>
     <h2 id="subheading"><i>Your result will be displayed behind!</i></h2>
@@ -39,22 +43,24 @@
     function alter_attempt_tb($conn,$attempt,$student){
       $query = "alter table $attempt
                 add foreign key(student_id)
-                references $student(student_id)";
+                references $student(student_id)
+                on delete set null";
       return mysqli_query($conn,$query);
     }
 
     function create_student_tb($conn,$student,$attempt){
-      $query = "create table if not exists $student(
-                student_id varchar(10) primary key,
-                first_name varchar(30),
-                last_name varchar(30),
-                age int,
-                id_attempt1 int,
-                id_attempt2 int,
-                first_score int,
-                last_score int,
-                foreign key(id_attempt1) references $attempt(attempt_id),
-                foreign key(id_attempt2) references $attempt(attempt_id)
+        $query = "create table if not exists $student(
+                  student_id varchar(10) primary key,
+                  first_name varchar(30),
+                  last_name varchar(30),
+                  age int,
+                  id_attempt1 int,
+                  id_attempt2 int,
+                  first_score int,
+                  last_score int,
+                  foreign key(id_attempt1) references $attempt(attempt_id),
+                  foreign key(id_attempt2) references $attempt(attempt_id)
+                  on delete set null
                 )";
       return mysqli_query($conn,$query);
     }
@@ -271,7 +277,7 @@
         // Display an error message
           die("<p>Database connection failure</p>") ;// Not in production script
       }else{
-        $student_table = "students";
+        $student_table = "studentss";
         $attempt_table = "attempt";
         $question = "question";
         $score = 0;

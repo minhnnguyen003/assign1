@@ -6,7 +6,7 @@
 }
 
 .left-pane {
-    width: 300px;
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@
     padding: 10px 5px;
     text-align: center;
     font-size: 18px;
-    background-color: #b0bcb9;
+    background-color: #bcb0b0;
     outline: none;
     margin: 0;
     border: none;
@@ -46,13 +46,21 @@
 
 .left-pane .menu-button {
     width: 100%;
-    padding: 25px;
     font-size: 18px;
-    transition: all .7s;
+    transition: all 1s;
 }
 
-.left-pane .menu-button:hover {
+.left-pane .menu-button a {
+    color: #464848;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.left-pane .menu-button a:hover {
     background-color: #cd9f9f;
+    color: #551A8B;
 }
 
 .left-pane .menu-button i {

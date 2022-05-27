@@ -45,6 +45,7 @@
 }
 
 .left-pane .menu-button {
+    display: block;
     width: 100%;
     padding: 25px;
     font-size: 18px;

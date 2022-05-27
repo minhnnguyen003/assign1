@@ -18,12 +18,10 @@
             <h1>Login</h1>
             <form action="./authentication.php" method="POST" class="login-form">
                 <div class="box">
-                    <label for="student_id">Student ID</label>
-                    <input type="text" name="student_id" class="text-box">
+                    <input type="text" name="username" class="text-box" placeholder="Student ID">
                 </div>
                 <div class="box">
-                    <label for="student_id">Password</label>
-                    <input type="password" name="student_id" class="text-box">
+                    <input type="password" name="pass" class="text-box" placeholder="Password">
                 </div>
                 <input id="login-btn" type="submit" value="Login">
             </form>

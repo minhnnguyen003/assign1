@@ -9,6 +9,12 @@ body{
   font-family: "Roboto","Helvetica","Arial",sans-serif;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .heading{
   text-align: center;
   width: 100%;
@@ -56,6 +62,7 @@ body{
   padding: 30px;
   box-shadow: 6px 6px 10px -1px rgba(128, 204, 255,0.15),
               -6px -6px 10px -1px rgba(128, 204, 255,0.7);
+  box-sizing: content-box;
 }
 .inner{
   height: 140px;
@@ -68,6 +75,7 @@ body{
               -0.5px -0.5px 0px rgba(36, 167, 255,1),
               0.5px 0.5px 0px rgba(0, 0, 0,0.15),
               0px 12px 10px -10px rgba(0,0,0,0.05);
+  box-sizing: content-box;
 }
 .score p[id = "score"]{
   text-align: center;
@@ -185,4 +193,119 @@ h4{
       background-color: rgb(0, 136, 227);
 
   }
+}
+
+
+/* 
+File: navbar.css
+Author: Minh Nhat Nguyen
+created: 22/03/2022
+last modified: 27/03/2022
+description: Styling for navigation bar inside every page, linking through style.css, part of Part 1 Assignment of unit COS10026
+*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+/* Use flex to align list centered */
+.nav-bar
+{
+  display: flex;
+  overflow: visible;
+  background-color: #0e0d0d;
+  justify-content: flex-end;
+  padding: 0 0 0 160px;
+  align-items: center;
+}
+
+.nav-bar ul{
+  margin: auto;
+  padding: 0;
+}
+
+.nav-links li a, .manage-button
+{
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Montserrat','Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+.nav-links li
+{
+  display: inline-block;
+  padding: 20px 20px 20px 20px;
+}
+
+.nav-links li:hover {
+  transition: all .7s ease-in;
+  color: #a09c9c;
+  background-color: #4b4949;
+}
+
+.nav-bar .nav-links .icon, .manage-button .icon {
+  padding-right: 5px;
+}
+
+.fa-bars {
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+  display: none !important;
+}
+
+
+/* Responsive design for Navigation bar */
+@media screen and (max-width: 1024px) {
+  header {
+      position: fixed;
+      width: 100%;
+  }
+  .nav-bar {
+      display: block;
+      padding: 0;
+  }
+  .nav-bar li {
+      display: block;
+      padding: 30px 30px 30px 0;
+  }
+
+  .nav-bar ul {
+      display: none;
+      padding: 0;
+  }
+  .fa-bars {
+      padding: 20px;
+      display: inline-block !important;
+      border-right: 5px solid black;
+  }
+  .manage-button{
+      display: none;
+  }
+}
+
+
+#menu-btn {
+  display: none;
+}
+/* ~ means the select nearest siblings so  #menu-btn:checked ~ ul means select sibling ul tag*/
+#menu-btn:checked ~ ul {
+  display: block !important;
+  width: 90%;
+  z-index: 100000000;
+}
+
+.manage-button {
+  background-color: #13a2d6;
+  min-width: 110px;
+  border-radius: 15px;
+  border: 1px solid #13a2d6;
+  padding: 6px 10px;
+  right: 20px;
+  top: 0;
+  margin-right: 30px;
 }

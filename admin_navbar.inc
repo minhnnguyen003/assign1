@@ -5,6 +5,6 @@
       <ul class="nav-links" id="nav-list">
         <li><a href="./index.php"><span class="icon"><i class="fa-solid fa-house"></i></span>Home</a></li>
       </ul>
-      <a class="manage-button" href="./manage.php" class="active"><span class="icon">Log out</a> 
+      <a class="manage-button" href="./index.php" class="active"><span class="icon">Log out</a> 
     </nav>
   </header>
