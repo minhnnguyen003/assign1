@@ -18,15 +18,15 @@
             <h1>Login</h1>
             <form action="./authentication.php" method="POST" class="login-form">
                 <div class="box">
-                    <input type="text" name="username" class="text-box" placeholder="Student ID">
+                    <input type="text" name="username" class="text-box" placeholder="Student ID" value="103534696">
                 </div>
                 <div class="box">
-                    <input type="password" name="pass" class="text-box" placeholder="Password">
+                    <input type="password" name="pass" class="text-box" placeholder="Password" value="helloworld">
                 </div>
                 <input id="login-btn" type="submit" value="Login">
             </form>
-            <p class="copyright">Mark up by: <a href="mailto:103831821@student.swin.edu.au"
-          class="footer-list-anchor white link" target="_blank">Minh Nhat Nguyen</a></p>
+            <!-- <p class="copyright">Mark up by: <a href="mailto:103831821@student.swin.edu.au"
+          class="footer-list-anchor white link" target="_blank">Minh Nhat Nguyen</a></p> -->
         </main>
 
     </div>

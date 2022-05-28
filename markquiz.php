@@ -453,7 +453,6 @@
                 }
                 mysqli_free_result($res);
                 echo "<p>Click <a class =\"anchor\" href = \"quiz.php\">here</a> to re-do the quiz</p>";
-                echo "<p> Click<a class =\"anchor\" href =\"reason.php\"> here</a> for more infomation</p>";
                 echo "</div>";
                 // echo "</div>";
               }else{

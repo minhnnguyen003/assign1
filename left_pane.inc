@@ -1,11 +1,12 @@
 <nav class="left-pane">
         <form class="search-pane" method="get" action="./manage.php">
             <input type="text" placeholder="Search" name="searchContent">
+            <input type="text" placeholder="Search" name="login" style="display:none;" value="bG9naW5zdWNjZXNzZnVsbHl0b21hbmFnZWhhdGVjb3MxMDAyNmZ1Y2t0aGVkZWFkbGluZWFuZGRhbmllbA==">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
 
         <div class="menu-button">
-            <a href="./manage.php">
+            <a href="./manage.php?login=bG9naW5zdWNjZXNzZnVsbHl0b21hbmFnZWhhdGVjb3MxMDAyNmZ1Y2t0aGVkZWFkbGluZWFuZGRhbmllbA==">
                 <i class="fa-solid fa-chalkboard-user"></i>
                 <span>Dashboard</span>
             </a>

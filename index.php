@@ -50,7 +50,7 @@
       </p>
     </article>
     <p>Click the button below for an in-depth dive into Streaming Media!</p>
-    <form action="./topic.html" method="get">
+    <form action="./topic.php" method="get">
       <button id="more" type="submit">Click For More</button>
     </form>
   </section>

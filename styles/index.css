@@ -7,7 +7,7 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 */
 
 #index{
-	background-image: url("../images/bgimg.jpg");
+	background-image: url(../images/10167453h.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	color: #fff;

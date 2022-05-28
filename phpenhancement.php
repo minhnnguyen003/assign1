@@ -30,9 +30,6 @@
         <details open>
           <summary class="head-summary">Login page</summary>
           We use PHP, MySQL to create a login page, which require authentication before access to the Management page.
-          <ol class="bigger-list">
-            <li>
-              <h4>student table</h4>
               <ul class="no-list-icon">
                 <li>
                   <details open>
@@ -53,8 +50,6 @@
                   </details>
                 </li>
               </ul>
-            </li>
-          </ol>
         </details>
       </article>
       <article class="sub-article">
@@ -128,10 +123,6 @@
                   <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     We make this one so that when user click on the attempt ID number in the manage page, it will redirect them to the edit score of that attempt. To do this, we need to parse the attempt ID into the URL using the link <code>./edit.php?id=1</code>. Then we use <code>$_SERVER["QUERY_STRING"]</code> to retrieve the querystring from the URL. After that, we pass the queryString into a function called <code>a = parse_str()</code> so that we can access the content through <code>a["id"]</code>
-                    <figure class="enhancement-figure">
-                      <img src="./images/login.png" alt="login page screenshot">
-                      <figcaption>Login page screenshot</figcaption>
-                    </figure> 
                   </details>
                 </li>
               </ul>

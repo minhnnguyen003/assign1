@@ -44,7 +44,7 @@
                 {
                     echo "<h1 class=\"title\">Delete Successfully</h1>";
                     sleep(10);
-                    header("location: ./manage.php");
+                    header("location: ./manage.php?login=bG9naW5zdWNjZXNzZnVsbHl0b21hbmFnZWhhdGVjb3MxMDAyNmZ1Y2t0aGVkZWFkbGluZWFuZGRhbmllbA==");
                 }
             }
             else 

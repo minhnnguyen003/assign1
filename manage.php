@@ -25,7 +25,9 @@
     <?php
         require('./settings.php');
         $stringQuery = $_SERVER['QUERY_STRING'];
-        if($stringQuery != "login=bG9naW5zdWNjZXNzZnVsbHl0b21hbmFnZWhhdGVjb3MxMDAyNmZ1Y2t0aGVkZWFkbGluZWFuZGRhbmllbA==") header('location: ./login.php', NULL ,303);
+        $queryArray = array();
+        parse_str($stringQuery, $queryArray);
+        if(!isset($queryArray["login"])) header('location: ./login.php', NULL ,303);
 
         $conn = @mysqli_connect($host, $user, $pwd, $sql_db);
         if($conn)
@@ -35,10 +37,6 @@
             $sql_StudentTable = "studentss";
             
 
-            # Enhancement
-            $stringQuery = $_SERVER['QUERY_STRING'];
-            $queryArray = array();
-            parse_str($stringQuery, $queryArray);
             // echo "<p>", $queryArray["searchContent"], "</p>";
             
             $attempt_query = "select * from $sql_AttemptTable";
@@ -78,6 +76,7 @@
             if(isset($queryArray["searchContent"])) 
             {
                 $searchContent = $queryArray["searchContent"];
+                echo("<p>$searchContent");
                 if(is_numeric($queryArray["searchContent"]))
                 {
                     $attempt_query = "select * from $sql_AttemptTable where student_id = \"$searchContent\"";
@@ -86,7 +85,7 @@
                 {
                     $student_id = array();
                     foreach($students_array as $student_array) {
-                        if(preg_match("/$searchContent/", $student_array["firstName"]) or preg_match("/$searchContent/", $student_array["lastName"]))
+                        if(strpos($student_array["firstName"], $searchContent) !== false or strpos($student_array["lastName"],$searchContent) !== false)
                         {
                             array_push($student_id, $student_array["id"]); 
                         }
