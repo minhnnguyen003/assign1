@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="The Homepage for the topic Streaming Media" />
   <meta name="keywords" content="MySQL,PHP" />
+  <meta name="author" content="Viet Dung Tran">
   <link rel="stylesheet" href="./styles/markquiz.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
   <title>Quiz</title>
@@ -466,6 +467,7 @@
           echo "<p class =\"anchor\" id =\"over-msg\">You reached attempt limit!!!</p>";
         }
       }
+      mysqli_close($conn);
 
     }
 
