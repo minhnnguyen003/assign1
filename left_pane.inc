@@ -12,12 +12,6 @@
             </a>
         </div>
         <div class="menu-button">
-            <a href="">
-                <i class="fa-solid fa-filter"></i>
-                <span>Filter</span>
-            </a>
-        </div>
-        <div class="menu-button">
             <a href="./edit.php">
                 <i class="fa-solid fa-pencil"></i>
                 <span>Edit Data</span>
