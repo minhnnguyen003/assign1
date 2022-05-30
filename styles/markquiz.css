@@ -458,3 +458,20 @@ div[class="footer-bottom"] p {
   font-family: poppins,sans-serif;
   font-size: 15px;
 }
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff2f2;
+  border-radius: 70%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(156, 156, 156);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(31, 30, 30);
+}
