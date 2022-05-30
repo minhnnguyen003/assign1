@@ -64,6 +64,10 @@ body{
               -6px -6px 10px -1px rgba(128, 204, 255,0.7);
   box-sizing: content-box;
 }
+.info p{
+  margin-top: 20px;
+  font-size: 20px;
+}
 .inner{
   height: 140px;
   width: 140px;
@@ -95,6 +99,7 @@ body{
   margin-bottom: 0.1px;
   text-align: center;
   padding: auto;
+  margin-top: 20px ;
 }
 .message1{
   align-items: center;
@@ -110,6 +115,7 @@ body{
   align-items: flex-start;
   flex-direction: column;
   width: 45%;
+  
 }
 #over-msg{
   font-size: 2em;
@@ -159,6 +165,7 @@ h4{
 
   }
 }
+
 #check td, #check th {
   border: 1px solid #ddd;
   padding: 8px;
