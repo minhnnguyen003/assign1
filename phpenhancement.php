@@ -95,8 +95,7 @@
                   <details open class="description">
                     <summary><strong>Description: </strong></summary>
                     Foreign key is a field in one table, that refers to the primary key in another table. In this enhancement we have two tables, 'attempts' and 'studentss'. Firstly, in studentss table, student_id is the primary key whereeas id_attempt1 and id_attempt2 is the foreign key.
-                    On the other hand, in attempts table, attempt_id is the primary key whereeas student_id is the foreign key. In first table, we have created a primary key with a varchar. ...#link 
-                    
+                    On the other hand, in attempts table, attempt_id is the primary key whereeas student_id is the foreign key. 
                   </details>
                 </li>
               </ul>

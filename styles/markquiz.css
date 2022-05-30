@@ -309,3 +309,150 @@ header {
   top: 0;
   margin-right: 30px;
 }
+
+/*
+File: footer.css
+Author: Viet Dung Tran
+created: 16/03/2022
+last modified: 27/03/2022
+description: CSS for footer
+*/
+
+footer {
+  clear: both;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 25px 0px 25px;
+  font-style: italic;
+  align-items: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-list .footer-list-item {
+  list-style: none;
+  margin-bottom: 12px;
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+}
+
+.footer-list .footer-list-item .footer-list-anchor {
+  text-decoration: none;
+  color: white;
+  font-family: poppins, sans-serif;
+  font-size: 12px;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 18px;
+}
+#copyright-line{
+  margin-left: 0;
+  border-top: 2px solid white;
+  width: 100%;
+
+}
+.footer-row{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-col{
+  padding: 10px;
+}
+.swinburne-logo{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer-col h3{
+  width: fit-content;
+  margin-bottom: 20px;
+  font-family: poppins,sans-serif;
+  font-size: 15px;
+}
+
+.contact-us .fa-brands{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #000;
+  background: #fff;
+  margin-top: 10px;
+}
+.contact-us .brand-icon:hover{
+  cursor: pointer;
+  color: rgb(82, 220, 255);
+  transform: translateY(-3px);
+  box-shadow:rgba(82, 220, 255, 0.6) ;
+}
+.contact-us .fa-linkedin:hover{
+  cursor: pointer;
+  color: rgb(40,103,178);
+  transform: translateY(-3px);
+  box-shadow: rgba(40,103,178,0.6) ;
+}
+.contact-us .fa-instagram:hover{
+  cursor: pointer;
+  color: rgb(225,48,108);
+  transform: translateY(-3px);
+  box-shadow: rgba(225,48,108, 0.6);
+}
+.contact-us .fa-facebook-f:hover{
+  cursor: pointer;
+  color: rgb(66, 103, 178);
+  transform: translateY(-3px);
+  box-shadow: rgba(66, 103, 178, 0.6);
+}
+.contact-us .fa-youtube:hover{
+  cursor: pointer;
+  color: rgb(255, 0 ,0);
+  transform: translateY(-3px);
+  box-shadow: rgba(255, 0, 0, 0.6);
+}
+copyright-line{
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+
+div[class="footer-bottom"] p {
+  font-size: 12px;
+
+}
+
+.footer-row{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer-col{
+  padding: 10px;
+}
+.swinburne-logo{
+  margin-bottom: 20px;
+}
+.footer-col h3{
+  width: fit-content;
+  margin-bottom: 20px;
+  font-family: poppins,sans-serif;
+  font-size: 15px;
+}

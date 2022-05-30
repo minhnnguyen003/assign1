@@ -87,6 +87,15 @@ table a {
     color: #fff;
 }
 
+table tr:nth-child(even) {
+    background-color: #79b0e0 !important;
+}
+
+
+table tr:nth-child(odd) {
+    background-color: rgb(155, 172, 240);
+}
+
 .big-table .name, .table-10 .name {
     width: 20%;
 }
@@ -115,7 +124,6 @@ table a {
 }
 
 .big-table td, .table-10 td {
-    background-color: #7591A9;
     padding: 5px 0 5px 10px;
     border: 1px #7591A9;
     color: #fff;

@@ -196,18 +196,10 @@
 
     ?>
     </table>
-    
     </main>
     
-
-    <!-- <table class="big-table">
-            <th class="head"></th>
-            <th class="head"></th>
-        </tr>
-        <tr class="row">
-        </tr>
-    </table> -->
-
+   
+    
 </body>
 </html>
 

@@ -315,7 +315,6 @@
                 echo "<p>You've done your first attempt!</p>";
                 echo "<p>You got $score for not having done all the question!!!</p>";
                 echo "<p>Click <a class =\"anchor\" href = \"quiz.php\">here</a> to re-do the quiz</p>";
-                echo "<p> Click<a class =\"anchor\" href =\"reason.php\"> here</a> for more infomation</p>";
                 echo "</div>";
                 // echo "</div>";
               }
@@ -467,11 +466,15 @@
         }
       }
 
-    }
 
+    }
   ?>
   </div>
   </div>
+
+  <?php
+    require("./footer.inc");
+  ?>
 </body>
 
 </html>

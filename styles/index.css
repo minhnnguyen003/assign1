@@ -62,9 +62,52 @@ description: Styling for index.html, part of Part 1 Assignment of unit COS10026
 	transform: translateY(-3px);
 	background-color:rgb(125, 228, 255);
 	box-shadow: 15px 15px 25px rgba(36, 160, 255, 0.3);
-	border-color: rgb(67, 210, 247)
+	border-color: rgb(67, 210, 247);
 }
 
+.link {
+	font-weight: 700;
+	font-style: italic;
+	color: #ececec98;
+}
+
+.link:hover {
+	transition: all .5s ease-in-out;
+	color: #5644c6;
+}
+
+.popup-bg {
+	position: fixed;
+	background-color: rgba(0, 0, 0,0.6);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 100000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pop-up {
+	position: relative;
+	background-color: rgb(0, 0, 0);
+	text-align: center;
+	padding: 50px 100px;
+}
+
+#close-icon:hover {
+	color: #5644c6;
+	transition: all .4s ease-in-out;
+}
+
+#close-icon {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 0;
+	font-size: 32px;
+}
 
 /* Minh Nhat Nguyen modification */
 @media screen and (max-width: 1024px) {

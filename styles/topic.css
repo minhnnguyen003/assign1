@@ -69,9 +69,21 @@ table, th, td {
     border-collapse: collapse;
 }
 
+table, tr:first-child {
+    background-color: #aca6bea4 !important;
+}
+
+table, tr:nth-child(even) {
+    background-color: rgb(135, 157, 245);
+}
+
+table, tr:nth-child(odd) {
+    background-color: #3330cfbd;
+}
+
 th, td {
     min-width: 100px;
-    padding-left: 10px;
+    padding: 10px;
     text-align: left;
 }
 

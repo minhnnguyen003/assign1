@@ -16,6 +16,16 @@
 
 <body id="index">
 
+  <div class="popup-bg" id="popup-bg">
+    <div class="pop-up">
+      <a id="close-icon" onclick="closeBtn()">Close <i class="fa-solid fa-circle-xmark"></i></a>
+      <h1>Tour Video</h1>
+      <p>Click <a class="link" target="_blank" href="https://youtu.be/qvavETwdLo0">here</a> to watch the video on YouTube</p>
+        <br>
+      <iframe width="720" height="480" src="https://www.youtube.com/embed/qvavETwdLo0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  
   <?php
     require('./navbar.inc');
   ?>
@@ -42,6 +52,7 @@
       downloaded file. Furthermore, since data order is unimportant, Streaming Media is sent and received according to
       network availability.
     </p>
+    <p>Link to watch the video on YouTube: <a class="reference-link link white" target="_blank" href="https://youtu.be/qvavETwdLo0">https://youtu.be/qvavETwdLo0</a></p>
     <article class="reference">
       <h3>Reference</h3>
       <p class="left-aligned">Anon 2022, Streaming Media, viewed 2 April, 2022, <a class="reference-link link white"
@@ -61,5 +72,10 @@
 
 
 </body>
-
+<script>
+  function closeBtn() {
+    popUp = document.getElementById('popup-bg');
+    popUp.style.display = "none";
+  }
+</script>
 </html>
